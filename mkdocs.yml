@@ -1,0 +1,62 @@
+site_name: Icona - Configurazione di base della bilancia
+site_url: https://github.com/ivanrobuschi-custom/icona-configurazione-bilancia.git
+site_author: Ivan Robuschi
+
+theme:
+  name: material
+  logo: assets/icons/logo.png
+  favicon: assets/icons/favicon.png
+  language: it
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+  palette:
+    primary: blue grey
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - tags
+
+copyright: Copyright Custom S.p.A 2026
+
+nav:
+  - Home: index.md
+  - Introduzione:
+      - Preambolo: preambolo.md
+  - Configurazione di base:
+      - Lista Banchi: lista-banchi.md
+      - Collegamenti: collegamenti.md
+      - Bilancia: bilancia.md
+      - Configurazione Operativa: configurazione-operativa.md
+  - Archivi e articoli:
+      - Categorie Merceologiche: categorie-merceologiche.md
+      - Articoli PLU: articoli-plu.md
+  - Tastiera:
+      - Configurazione Tastiera: configurazione-tastiera.md
+      - Schede Tastiera: schede-tastiera.md
+  - Archivi di supporto e formati:
+      - Intestazioni, Operatori e Testi: intestazioni-operatori-testi.md
+      - Formati Etichetta: formati-etichetta.md
+      - Formati Barcode: formati-barcode.md
