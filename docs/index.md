@@ -15,7 +15,7 @@ Guida tecnica per **configurare e conoscere la bilancia Icona**, dalla prima acc
 
 ## Da dove partire
 
-Se non conosci Icona, comincia da [Conoscere Icona](panoramica-icona.md): gamma, architettura software e applicativi collegati. Poi segui le pagine di configurazione nell'ordine indicato sotto.
+Se non conosci Icona, comincia da [Conoscere Icona](panoramica-icona.md): gamma, architettura software e applicativi collegati. Poi segui le pagine di configurazione nell'ordine indicato sotto. I manuali ufficiali in PDF sono nella pagina [Risorse](risorse.md).
 
 ## Il percorso di configurazione
 
@@ -42,6 +42,7 @@ L'ordine è quello consigliato: **prima i banchi, poi le impostazioni della bila
 | 16 | [Promozioni](promozioni.md) | Taglio prezzo e sconto percentuale |
 | 17 | [Funzioni di vendita](funzioni-di-vendita.md) | Operatore impegnato, doppio listino, tavoli, tasti con immagini |
 | | [Glossario](glossario.md) | I termini del configuratore |
+| | [Risorse](risorse.md) | Manuali ufficiali CUSTOM (manuale d'uso, assistenza, guida rapida) da scaricare, con i collegamenti alle sezioni |
 
 ## La mappa del configuratore
 
