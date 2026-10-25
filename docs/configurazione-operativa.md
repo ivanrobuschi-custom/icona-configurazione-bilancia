@@ -1,6 +1,6 @@
 ---
 title: "Configurazione Operativa: modalità di lavoro della bilancia"
-date: "2025-04-10"
+date: "2026-10-25"
 categoria: software Hyperetail
 ---
 
@@ -8,186 +8,241 @@ categoria: software Hyperetail
 
 # Configurazione Operativa: modalità di lavoro della bilancia
 
-**Target:** tecnico installatore / rivenditore · **Video:** Custom Academy, webinar *Icona configurazione di base* (10/04/2025), dal minuto 23:00 al 36:10.
+**Target:** tecnico installatore / rivenditore.
 
 ## Obiettivo
 
-Al termine sai dire alla bilancia **in quale modalità deve lavorare** (Multipesata, Single Ticket, Etichetta o Self Service), impostare barcode di default, tipo di carta e tipo di tastiera, e conosci le altre sezioni della pagina: Richiamo Articoli, Totali Etichette e Gestione Cliente.
+Dire alla bilancia **in quale modalità deve lavorare** (Multipesata, Single Ticket, Etichetta o Self Service), impostare barcode di default, tipo di carta e tipo di tastiera, e conoscere le altre sezioni della pagina: Richiamo Articoli, Totali Etichette e Gestione Cliente.
 
 ## Prerequisiti
 
-- Banchi creati e bilancia dichiarata: vedi [Lista Banchi](lista-banchi.md) e [Bilancia](bilancia.md).
-- Il relatore completa questa pagina **prima** degli archivi, cioè prima di creare i PLU.
+- Banchi creati e bilancia dichiarata: [Lista Banchi](lista-banchi.md) e [Bilancia](bilancia.md).
+- Questa pagina va completata **prima degli archivi**, cioè prima di creare i PLU.
 
 !!! note "Un unico configuratore per tutta la famiglia"
     Un unico configuratore, un unico archivio, un'unica release permettono di modellare la bilancia **indipendentemente dall'hardware**: bassa o alta, con uno o due monitor, i passaggi di configurazione sono sempre gli stessi.
 
 !!! note "A quale banco si applica"
-    In alto a destra la pagina mostra **per Banco** e **Banco = 2**: le impostazioni che modifichi valgono per il banco indicato, perché nella pagina Bilancia il **Tipo Configurazione** è *per Banco*.
+    In alto a destra la pagina mostra **per Banco** e **Banco = 2**: le impostazioni valgono per il banco indicato, perché nella pagina Bilancia il **Tipo Configurazione** è *per Banco*.
 
-## Passaggi
+!!! tip "Regola generale: il PLU prevale"
+    Le programmazioni fatte negli **archivi PLU** (per esempio formato etichetta, blocco prezzo, barcode, lotto) **prevalgono** sulle impostazioni generali di questa pagina. Se nel PLU non si specifica nulla, la bilancia usa le impostazioni generali.
 
-### 1. Apri Configurazione Operativa
+## Le sezioni della pagina
 
-> Nel video: 23:16
+Dal menu **Setup Bilancia**, sezione **Configurazione**, tocca **Configurazione Operativa**. A sinistra compaiono le sezioni: **Generale**, **Opzioni Multipesata**, **Opzioni Single Ticket**, **Opzioni Etichetta**, **Opzioni Self Service**, **Richiamo Articoli**, **Totali Etichette**, **Gestione Cliente** e **Personalizzazioni**.
 
-Dal menu **Setup Bilancia**, sezione **Configurazione**, tocca **Configurazione Operativa**. A sinistra compaiono le sezioni: **Generale**, **Opzioni Multipesata**, **Opzioni Single Ticket**, **Opzioni Etichetta**, **Opzioni Self Service**, **Richiamo Articoli**, **Totali Etichette** e **Gestione Cliente**.
+![Voce Configurazione Operativa nel menu Setup Bilancia](assets/images/op-01-voce-configurazione-operativa.jpg)
 
-![Voce Configurazione Operativa nel menu Setup Bilancia](assets/images/op-01-voce-configurazione-operativa.png)
+## 1. Generale: scegli il modo di funzionamento
 
-### 2. Generale: scegli il modo di funzionamento
+La sezione **Generale** dice alla bilancia **in che modalità deve operare**.
 
-> Nel video: 23:40
-
-La prima sezione, **Generale**, dice alla bilancia **in che modalità deve operare**.
-
-![Generale: Modo Funzionamento, intestazione e blocco prezzo](assets/images/op-02-generale-modo-funzionamento.png)
+![Generale: Modo Funzionamento, intestazione e blocco prezzo](assets/images/cfg2-generale-1.jpg)
 
 Il menu a tendina **Modo Funzionamento** propone quattro modalità:
 
-![Menu a tendina del Modo Funzionamento](assets/images/op-03-modo-funzionamento-tendina.png)
+![Menu a tendina del Modo Funzionamento](assets/images/op-03-modo-funzionamento-tendina.jpg)
 
-| Modalità | Cosa significa, secondo il relatore |
+| Modalità | Cosa fa |
 |---|---|
-| **Multipesata** | Scontrini: pesata a transazione e scontrino somma, con una serie di dinamiche che si vedono nel seguito. È la modalità scelta nel webinar. |
-| **Single Ticket** | Scontrino singolo: ogni transazione effettuata sulla bilancia produce uno scontrino. |
-| **Etichetta** | Apre il mondo dell'etichettatura avanzata ed evoluta. |
-| **Self Service** | Modalità self service, con le sue impostazioni dedicate. |
+| **Multipesata** | Bilancia classica: più pesate (pesata a transazione, scontrino somma) e un unico scontrino finale. Dinamiche descritte più sotto |
+| **Single Ticket** | Scontrino singolo: ogni transazione effettuata sulla bilancia produce uno scontrino |
+| **Etichetta** | Apre l'ambiente di etichettatura avanzata ed evoluta: vedi [Etichettatura in vendita](etichettatura.md) |
+| **Self Service** | Modalità self service, con le sue impostazioni dedicate |
 
-Lasciata la modalità su **Multipesata**, la sezione Generale chiede altre personalizzazioni:
+### Campi della sezione Generale
 
-- **Intestazione Corrente**: la bilancia può avere più di un'intestazione. È utile a chi etichetta per conto terzi, perché si riferisce a una parte dell'archivio tabellare. Di default vale **1**; l'intestazione non è ancora stata creata perché non si è ancora arrivati agli archivi. Toccando la lente si apre l'elenco delle intestazioni, per ora vuoto.
+| Campo | Valore di default | Funzione |
+|---|---|---|
+| **Intestazione Corrente** | 1 | Intestazione dello scontrino usata a livello generale. La bilancia può avere più intestazioni (utile a chi etichetta per conto terzi): vedi [Intestazioni, Operatori e Testi](intestazioni-operatori-testi.md). Con la lente si apre l'elenco |
+| **Blocco Prezzo** | da PLU | Se nel PLU il prezzo è bloccato, la bilancia lo rispetta |
+| **Blocco Pezzi x PLU a Corpo** | disattivato | Blocco sui pezzi per gli articoli venduti a corpo |
+| **Modo Richiamo Tracciabilità** | Disattivato | Come la bilancia richiama la tracciabilità: vedi [Tracciabilità e lotti](tracciabilita.md) |
+| **Lotto Predefinito** | 1 | Lotto proposto di default |
+| **Controllo richiamo tracciabilità** | Nessun controllo | Controllo sul richiamo della tracciabilità |
+| **Cambio Banco Automatico** | disattivato | Cambio automatico del banco |
+| **Tara Predefinita** | 0 | Tara usata di default |
+| **Usa Tara Predefinita all'Avvio** | disattivato | Applica la tara predefinita all'avvio |
+| **Utilizza tara predefinita Self Service** | disattivato | Come sopra, in modalità Self Service |
+| **Formato Stampa dati Lotto** | 0 | Formato per la stampa dei dati del lotto |
+| **Formato Stampa Ticket Ordini** | 0 | Formato di stampa dei ticket ordini |
+| **Abilita forme di Pagamento** | disattivato | Gestione delle forme di pagamento |
+| **Se data Produzione =0 usa data odierna** | disattivato | Se la data di produzione dell'articolo è 0, usa la data odierna |
+| **Abilita password multilivello** | disattivato | Password a più livelli |
 
-    ![Elenco delle intestazioni, ancora vuoto](assets/images/op-04-intestazione-corrente-lista.png)
+![Generale: seconda parte, tracciabilità e tara](assets/images/cfg2-generale-2.jpg)
 
-- **Blocco Prezzo**: può essere impostato **da PLU**. Se nella programmazione del PLU il prezzo è bloccato, la bilancia lo rispetta. Regola generale: **le programmazioni fatte negli archivi PLU prevalgono sulle impostazioni generali**; se nel PLU non si specifica nulla, la bilancia prende le impostazioni generali che si stanno definendo ora.
+![Generale: terza parte, formati lotto, pagamenti, password multilivello](assets/images/cfg2-generale-3.jpg)
 
-    ![Blocco Prezzo impostato da PLU](assets/images/op-05-blocco-prezzo.png)
+Gli altri settaggi della sezione sono intuitivi.
 
-Gli altri settaggi della sezione il relatore li definisce intuitivi e li salta per non togliere tempo alla parte più interessante.
+!!! warning "Blocco Prezzo e programmazione del PLU"
+    Con **Blocco Prezzo** impostato su **da PLU**, vale la programmazione fatta nell'archivio articoli. Se nel PLU non si specifica nulla, la bilancia prende le impostazioni generali.
 
-### 3. Opzioni Multipesata
+![Blocco Prezzo impostato da PLU](assets/images/op-05-blocco-prezzo.jpg)
 
-> Nel video: 26:28
+## 2. Opzioni Multipesata
 
-Ogni modalità ha le sue peculiarità. Il relatore si ferma sulla **Multipesata**, che è la modalità scelta.
+Ogni modalità ha le sue peculiarità. La **Multipesata** è la modalità usata negli esempi di questo manuale.
 
-![Opzioni Multipesata: parte alta della pagina](assets/images/op-06-opzioni-multipesata.png)
+![Opzioni Multipesata: parte alta della pagina](assets/images/cfg2-multipesata-1.jpg)
 
-- **Intestazione Corrente** (prima voce della pagina): si può impostare la bilancia con un'intestazione a livello generico e usare un'intestazione diversa per Multipesata o Single Ticket. Quando con i tasti funzione sulla tastiera si passa da una modalità all'altra, **cambia da sola anche l'intestazione**: la bilancia fa tutto in autonomia.
-- **Abilita Vendite Multi Reparto** e **Stampa Vendita ogni transazione**: si può abilitare la vendita multireparto e stampare un ticket **ogni volta che si seleziona o si batte un articolo**. Con tre articoli si hanno tre ticket e poi lo scontrino riepilogativo di chiusura. Nel webinar entrambi gli interruttori sono disattivati.
-- **Stampa Totale**: nel webinar è *Stampa Dettaglio*.
-- **Tipo Carta**: nel webinar è **Carta Continua**. La proposta compare sempre, *carta continua* o *carta etichetta*, perché la bilancia riconosce la carta e si adatta: si possono stampare etichette su carta continua, ma anche un single ticket su un'etichetta preconfigurata e pretagliata.
+| Campo | Valore di esempio | Funzione |
+|---|---|---|
+| **Intestazione Corrente** | 1 | Intestazione usata in Multipesata. Si può impostare un'intestazione generica e una diversa per Multipesata o Single Ticket: passando da una modalità all'altra con i tasti funzione, **cambia da sola anche l'intestazione** |
+| **Abilita Vendite Multi Reparto** | disattivato | Abilita la vendita multireparto |
+| **Stampa Vendita ogni transazione** | disattivato | Stampa un ticket **ogni volta che si seleziona o si batte un articolo**: con tre articoli si hanno tre ticket e poi lo scontrino riepilogativo di chiusura |
+| **Formato di Stampa x Vendita** | 1 | Formato di stampa dello scontrino |
+| **Stampa Totale** | Stampa Dettaglio | Stampa del dettaglio o del solo totale |
+| **Tipo Carta** | Carta Continua | **Carta Continua** o **Etichette**: la bilancia riconosce la carta e si adatta, quindi si possono stampare etichette su carta continua, ma anche un single ticket su un'etichetta preconfigurata e pretagliata |
+| **Barcode => Vendita** | 2 | Barcode del singolo PLU |
+| **Barcode => Multipesata** | 6 | Barcode raccoglitivo della multipesata |
+| **Barcode => QR Code Datacollect** | 1 | Formato del QR code |
+| **QRCode => Esplosione Raggruppata x Iva** | disattivato | Raggruppamento per IVA nel QR code |
+| **Tipo Tastiera** | RETAIL => 4 Operatori | Tastiera da usare in vendita |
+| **Cliente Multipesata** | disattivato | Gestione cliente in Multipesata |
+| **Dettaglio Numero Pezzi su Totale** | attivo | Mostra il numero di pezzi nel totale |
+| **Abilita immagini tastiera RETAIL** | attivo | Mostra le immagini sui tasti della tastiera Retail |
+| **Visualizza Operatore Impegnato** | attivo (disattivo di default) | Colora il tasto dell'operatore che sta lavorando: vedi [Funzioni di vendita](funzioni-di-vendita.md) |
+| **Disabilita stampa tara su scontrino** | disattivato | Non stampa la tara sullo scontrino |
 
-#### Barcode di default
+![Opzioni Multipesata: barcode e tastiera](assets/images/cfg2-multipesata-3.jpg)
 
-Nelle configurazioni generali della Multipesata si può impostare un **barcode di default**. Toccando la **lente** si apre l'archivio dei barcode, una bella fetta dei quali è già impostata di default.
+![Opzioni Multipesata: opzioni di vendita](assets/images/cfg2-multipesata-5.jpg)
 
-![Archivio barcode: Barcode => Vendita](assets/images/op-07-barcode-vendita-lista.png)
+### Barcode di default
 
-- Il nome che identifica ogni barcode, per esempio una stringa del tipo *L BBBBBB IIII K*, è quello che storicamente usa l'archivio delle bilance Italiana Macchi, per facilitare il concetto. È **solo un nome**: la costruzione del codice a barre è personalizzabile e riadattabile alle esigenze, come si vedrà più avanti nei [Formati Barcode](formati-barcode.md).
-- **Barcode => Vendita** (nel webinar **2**): il codice a barre della transazione singola del PLU riporta il codice identificativo del PLU scritto nell'anagrafica, nella parte finale il prezzo e il check di controllo.
-- **Barcode => Multipesata**: concettualmente è un EAN diverso dal precedente, un barcode **raccoglitivo**. Il valore proposto è **9**.
+Nelle configurazioni della Multipesata si può impostare un **barcode di default**. Toccando la **lente** si apre l'archivio dei barcode, una buona parte dei quali è già impostata.
 
-    ![Archivio barcode: Barcode => Multipesata, formato 9](assets/images/op-08-barcode-multipesata-lista.png)
+![Archivio barcode: Barcode => Vendita](assets/images/op-07-barcode-vendita-lista.jpg)
 
-    Il relatore indica che il barcode porta al suo interno il **numero dello scontrino**, il concetto spiegato prima nei [parametri dei banchi](lista-banchi.md). Se la bilancia è **connessa a un sistema**, è fondamentale attivare questo tipo oppure il **formato 6**, per poter procedere all'esplosione dello scontrino in cassa. Nel webinar il valore viene portato a **6**.
+- Le sigle dei nomi (per esempio *L BBBBBB IIII K*) ricalcano l'archivio storico delle bilance Italiana Macchi. Sono **solo un nome**: la costruzione del codice a barre è personalizzabile (vedi [Formati Barcode](formati-barcode.md)).
+- **Barcode => Vendita** (valore **2**): il codice a barre della transazione singola del PLU riporta il codice identificativo del PLU scritto nell'anagrafica, nella parte finale il prezzo e il check di controllo.
+- **Barcode => Multipesata**: è concettualmente un EAN diverso, un barcode **raccoglitivo**. Il formato proposto è **9**, che identifica il banco.
 
-    ![Barcode => Multipesata impostato a 6](assets/images/op-09-barcode-multipesata-6.png)
+    ![Archivio barcode: Barcode => Multipesata, formato 9](assets/images/op-08-barcode-multipesata-lista.jpg)
 
-<!-- verificare: la trascrizione di 29:23-29:37 e' confusa ("viene indicato C come un codice... LCSS"); il senso e' che il formato 9 identifica il banco e il formato 6 riporta il numero scontrino -->
+    Per il formato **6** il barcode porta al suo interno il **numero dello scontrino**, il concetto visto nei parametri dei [banchi](lista-banchi.md). Se la bilancia è **connessa a un sistema** che esplode lo scontrino in cassa, è fondamentale usare il formato **6** (o equivalente).
 
-#### Tipo Tastiera
+    ![Barcode => Multipesata impostato a 6](assets/images/op-09-barcode-multipesata-6.jpg)
 
-> Nel video: 30:03
+<!-- verificare: il parlato sui formati 9 e 6 è confuso; il senso è che il 9 identifica il banco e il 6 riporta il numero scontrino -->
 
-È la parte che ha **impatto immediato** sulle programmazioni successive. Quando si è vista la bilancia prima di entrare in configurazione, aveva già **14 operatori** (impostazione di default). Il relatore spiega che sono stati creati diversi **layout grafici di tastiera preconfigurati**, con un minimo di personalizzazione, adatti alla posizione di lavoro più idonea al cliente. È prevista anche una **Tastiera Personalizzata**, che sarà oggetto del webinar dedicato agli applicativi connessi.
+### Tipo Tastiera
 
-![Menu a tendina del Tipo Tastiera](assets/images/op-10-tipo-tastiera-tendina.png)
+La tastiera è l'impostazione con **impatto immediato** sulle programmazioni successive. La bilancia dispone di diversi layout grafici di tastiera preconfigurati, con un minimo di personalizzazione, adatti alla postazione di lavoro più idonea al cliente.
 
-Le voci sono **GDO => 14 Operatori**, **GDO => 8 Operatori**, **GDO => 4 Operatori**, **GDO => 10 Operatori**, **GDO => 5 Operatori**, **RETAIL => 4 Operatori** e **Tastiera Personalizzata**.
+![Menu a tendina del Tipo Tastiera](assets/images/cfg2-tipo-tastiera-tendina.jpg)
 
-Il relatore sceglie **RETAIL => 4 Operatori**, che è la più usata: si adatta perfettamente all'attività di retail, il mercato su cui in gran parte ci si muove, e offre molta personalizzazione di adattamento.
+| Tipo tastiera | Quando usarla |
+|---|---|
+| **GDO => 14 Operatori**, **GDO => 8 Operatori**, **GDO => 4 Operatori**, **GDO => 10 Operatori**, **GDO => 5 Operatori** | Bilance in GDO, dove non serve avere i PLU sulla schermata di vendita ma si vende tutto a codice: serve invece avere più operatori |
+| **RETAIL => 4 Operatori** | È la scelta consigliata per un negozio retail. Offre molta personalizzazione di adattamento e supporta le **schede** (vedi [Schede Tastiera](schede-tastiera.md)) |
+| **RETAIL Tasti X2**, **RETAIL Tasti X4**, **RETAIL Tasti X2 (V)** | Varianti con **tasti doppi** (in orizzontale o in verticale) e **tasti grandi quadrati**: vedi [Funzioni di vendita](funzioni-di-vendita.md) |
+| **Tastiera Personalizzata** | Layout personalizzato a partire da quelli preconfigurati. Non si può creare una schermata da zero, ma si possono fare piccole personalizzazioni |
 
-![Tipo Tastiera impostato su RETAIL => 4 Operatori](assets/images/op-11-tipo-tastiera-retail-4.png)
+La bilancia, appena configurata, mostra già 14 operatori (impostazione di default). Selezionando **RETAIL => 4 Operatori** la schermata si adatta.
 
-Il campo **Barcode => QR Code Datacollect** vale **1**; **QRCode => Esplosione Raggruppata x Iva** e **Cliente Multipesata** sono disattivati.
+![Tipo Tastiera impostato su RETAIL => 4 Operatori](assets/images/op-11-tipo-tastiera-retail-4.jpg)
 
-### 4. Opzioni Single Ticket
+## 3. Opzioni Single Ticket
 
-> Nel video: 31:36
+I campi sono: **Intestazione Corrente** (1), **Operatore Single Ticket** (100), **Barcode Default => Single Ticket** (2), **Tipo Carta** (Carta Continua), **Formato di Stampa** (13) e **Cliente Single Ticket** (disattivato).
 
-Nelle sezioni successive esistono personalizzazioni adatte al tipo di transazione. Per il Single Ticket il relatore non commenta i singoli campi, che sono: **Intestazione Corrente** (1), **Operatore Single Ticket** (100), **Barcode Default => Single Ticket** (2), **Tipo Carta** (Carta Continua), **Formato di Stampa** (1) e **Cliente Single Ticket** (disattivato).
+![Opzioni Single Ticket](assets/images/cfg2-single-ticket.jpg)
 
-![Opzioni Single Ticket](assets/images/op-12-single-ticket.png)
+## 4. Opzioni Etichetta
 
-### 5. Opzioni Etichetta
+Passando a **Etichetta** la bilancia gestisce l'etichetta in modo **manuale, automatico o preconfezionato**. È il cuore dell'etichettatura evoluta: la modalità d'uso è descritta in [Etichettatura in vendita](etichettatura.md).
 
-> Nel video: 31:55
+| Campo | Valore di esempio | Funzione |
+|---|---|---|
+| **Intestazione Corrente** | 0 | Intestazione usata in etichettatura |
+| **Modo Acquisizione Transazione** | MAN | **MAN**: la bilancia stampa l'etichetta solo con la **conferma dal tasto di stampa**. **AUT**: stampa **in automatico** quando si fa la pesata e si tocca l'articolo. **PRECONF**: modalità preconfezionato |
+| **Operatore Etichette** | 101 | Operatore di default a cui si aggancia la gestione dell'etichettatura |
+| **Barcode Default => Etichetta** | 2 | Barcode di default per le etichette |
+| **Tipo Carta** | Carta Continua | Carta continua o etichette |
+| **Formato di Stampa** | 13 | Formato etichetta di default. Con la lente si sceglie da un elenco di formati personalizzabili, copiati da un archivio già presente sulla bilancia: vedi [Formati Etichetta](formati-etichetta.md) |
+| **Simbolo Riconfezionamento** | vuoto | Simbolo stampato sulle etichette riconfezionate |
+| **Tipo Tastiera** | Retail | Tastiera usata in etichettatura. Selezionando Retail si porta in etichettatura la stessa impostazione della multipesata |
+| **Cliente Etichetta** | disattivato | Gestione cliente in etichettatura |
 
-Passando a **Etichetta**, la bilancia gestisce l'etichetta in modo **automatico, manuale o preconfezionamento**. Il campo **Modo Acquisizione Transazione** decide se la bilancia stampa l'etichetta **in automatico**, solo dalla variazione del peso, oppure richiede sempre la **conferma con il tasto**. C'è inoltre un **operatore di default** (**Operatore Etichette**, nel webinar 101) a cui si aggancia la gestione dell'etichettatura.
+![Opzioni Etichetta: modo acquisizione transazione](assets/images/cfg2-etichetta-modo-acquisizione.jpg)
 
-![Opzioni Etichetta](assets/images/op-13-etichetta.png)
+![Tipo Carta: Carta Continua oppure Etichette](assets/images/cfg2-etichetta-tipo-carta.jpg)
 
-Il **Tipo Carta** indica dove stampare l'etichetta. A differenza dello scontrino, qui si determina in modo generico anche il **Formato di Stampa** dell'etichetta, scegliendolo da un elenco di formati personalizzabili, preso da un archivio già esistente nella bilancia (vedi [Formati Etichetta](formati-etichetta.md)).
+!!! tip "Uso ibrido: scontrino ed etichetta sullo stesso rotolo"
+    Si può usare la bilancia in modo ibrido: stampare i formati etichetta su **carta continua** termica. Il cliente lavora con lo scontrino termico normale in Multipesata e, quando serve un'etichetta (per un takeaway o per confezionare una vaschetta), tocca un tasto e stampa l'etichetta senza cambiare il rotolo. Non c'è il riconoscimento da parte del sensore di prelievo dell'etichetta.
 
-![Tipo Carta: Carta Continua oppure Etichette](assets/images/op-14-etichetta-tipo-carta.png)
+## 5. Opzioni Self Service
 
-### 6. Opzioni Self Service
+Per il Self Service serve un'attenzione maggiore. Indipendentemente da come si è impostata la modalità nei parametri generali, qui si decide **in che modalità deve lavorare** la bilancia in Self Service (non in servizio rapido).
 
-> Nel video: 33:02
-
-Per il Self Service serve un'attenzione maggiore. Indipendentemente da come si è impostata la modalità nei parametri generali, qui si decide **in che modalità deve lavorare** la bilancia in Self Service.
-
-![Opzioni Self Service](assets/images/op-15-self-service.png)
+![Opzioni Self Service](assets/images/op-15-self-service.jpg)
 
 Il campo **Tipo Tastiera** offre quattro modalità:
 
-![Tipo Tastiera del Self Service](assets/images/op-16-self-service-tipo-tastiera.png)
+![Tipo Tastiera del Self Service](assets/images/op-16-self-service-tipo-tastiera.jpg)
 
-| Modalità | Descrizione del relatore |
+| Modalità | Descrizione |
 |---|---|
-| **Pittogrammi** | Sulla tastiera si vedono prima le **immagini della famiglia** (per esempio frutta, verdura, frutta secca), poi gli **articoli con l'immagine** e infine la stampa. |
-| **Tasti Diretti (60)** | Si lavora a tasti diretti: la voce indica subito quanti tasti massimi ci saranno in tastiera, e agli articoli saranno legati questi tasti. |
-| **Schede** | Modalità attivabile sia in Self Service sia in Multipesata: è quella che si userà nel webinar. |
-| **Impostazione Codice** | Valore mostrato in schermata. |
+| **Pittogrammi** | Sulla tastiera si vedono prima le **immagini delle famiglie** (per esempio frutta, verdura, frutta secca), poi gli **articoli con l'immagine** e infine la stampa |
+| **Tasti Diretti (60)** | Si lavora a tasti diretti: la voce indica il numero massimo di tasti in tastiera, ai quali saranno collegati gli articoli |
+| **Schede** | Modalità attivabile sia in Self Service sia in Multipesata |
+| **Impostazione Codice** | Valore mostrato in schermata |
 
-Altri campi: **Tipo Richiamo PLU** (si può richiamare **a codice o a tasto**; nel webinar *Codice PLU*) e **Timeout Self Service (sec.)** (10). Per il Self Service si possono scegliere anche formati etichetta ad hoc, che lavorano **in simultanea** con le altre modalità della bilancia. Anche la personalizzazione grafica si fa in questa parte.
+Altri campi: **Tipo Richiamo PLU** (richiamo **a codice o a tasto**; nell'esempio *Codice PLU*) e **Timeout Self Service (sec.)** (10). Per il Self Service si possono scegliere anche formati etichetta ad hoc, che lavorano **in simultanea** con le altre modalità, e anche la personalizzazione grafica si fa in questa parte. Più in basso: **Moltiplicatore Pezzi**, **Descrizione PLU in Area Metrologica** e **Abilita Web Services SenSei** (disattivati) e **Immagine Logo Self Service**.
 
-Più in basso: **Moltiplicatore Pezzi**, **Descrizione PLU in Area Metrologica** e **Abilita Web Services SenSei** (disattivati), e **Immagine Logo Self Service**.
+![Opzioni Self Service: parte bassa della pagina](assets/images/op-17-self-service-altre-opzioni.jpg)
 
-![Opzioni Self Service: parte bassa della pagina](assets/images/op-17-self-service-altre-opzioni.png)
+<!-- verificare: la tabella dei tipi di tastiera Self Service è compilata dalla schermata; "Impostazione Codice" non è descritta a parole -->
 
-!!! note "Intuitività"
-    Il relatore ripete che ogni singola voce è intuitiva e che la configurazione risulta quasi guidata.
+## 6. Richiamo Articoli
 
-<!-- verificare: la tabella dei tipi di tastiera Self Service e' compilata da schermata e parlato; "Impostazione Codice" non e' commentata dal relatore -->
+Il richiamo degli archivi e degli articoli è **condiviso da tutte le modalità di lavoro**. Serve perché la bilancia è anche un **gestionale al proprio interno**: si possono creare archivi che **non fanno parte della parte metrologica**. Esempio: in una gastronomia con degustazione si possono caricare sulla bilancia tutti i vini con l'EAN di riferimento, collegare uno scanner e aggiungere questi prodotti, che sono **a pezzo**, allo stesso scontrino.
 
-### 7. Richiamo Articoli
+| Campo | Valore | Funzione |
+|---|---|---|
+| **Manuale - Modo Richiamo PLU** | Normale | Come si richiama un PLU a mano |
+| **Manuale - N. Cifre x PLU** | 0 | Cifre del PLU nel richiamo manuale |
+| **Manuale - Tempo in decimi di secondo** | 0 | Tempo di attesa sul richiamo manuale |
+| **Scanner - Cifre Codice PLU EAN13** | 6 | Cifre del codice PLU nell'EAN13 letto dallo scanner |
+| **Scanner - Cifre Iniziale x Peso Variabile** | 2 | Cifre iniziali dell'EAN a peso variabile |
+| **Scanner - Barcode Prefix (1)** / **(2)** | 0 | Prefissi del barcode |
+| **Scanner - Barcode Suffix (1)** / **(2)** | 13 / 0 | Suffissi del barcode |
 
-> Nel video: 35:07
+![Richiamo Articoli: parametri dello scanner](assets/images/cfg2-richiamo-articoli.jpg)
 
-Il richiamo degli archivi e degli articoli è **condiviso da tutte le modalità di lavoro**. Serve perché la bilancia è un **gestionale al proprio interno**: si possono creare archivi che **non fanno parte della parte metrologica**. Esempio del relatore: in una gastronomia che fa degustazione si possono caricare sulla bilancia tutti i vini con l'EAN di riferimento, collegare uno scanner e aggiungere questi prodotti, che sono **prodotti a pezzo**, allo stesso scontrino.
+## 7. Totali Etichette e Gestione Cliente
 
-I campi mostrati sono **Scanner - Cifre Codice PLU EAN13** (6), **Scanner - Cifre Iniziale x Peso Variabile** (2), **Scanner - Barcode Prefix (1)** e **(2)** (0), **Scanner - Barcode Suffix (1)** (13) e **(2)** (0).
+**Totali Etichette** contiene **Formato Barcode Etichetta Totale** e i **Formato Etichetta Totale [1]**, **[2]**, **[3]**, **[4]**, **[5]**, tutti a 0 di default: servono alla stampa delle etichette dei totali (vedi [Etichettatura in vendita](etichettatura.md)).
 
-![Richiamo Articoli: parametri dello scanner](assets/images/op-18-richiamo-articoli.png)
+![Totali Etichette: formati delle etichette dei totali](assets/images/op-19-totali-etichette.jpg)
 
-### 8. Totali Etichette e Gestione Cliente
+**Gestione Cliente** è una sezione in evoluzione: nelle release in arrivo sono previste diverse novità. Sono visibili gli interruttori **Cliente Zero** e **Ultimo Cliente**, entrambi disattivati.
 
-> Nel video: 35:30
+![Gestione Cliente](assets/images/op-20-gestione-cliente.jpg)
 
-**Totali Etichette** non viene commentata: contiene **Formato Barcode Etichetta Totale** e i **Formato Etichetta Totale [1]**, **[2]**, **[3]**, **[4]**, **[5]**, tutti a 0 nel webinar.
+**Personalizzazioni** raccoglie opzioni specifiche di alcuni impianti: nell'esempio compare **Abilita funzionalità Tgr** (disattivato).
 
-![Totali Etichette: formati delle etichette dei totali](assets/images/op-19-totali-etichette.png)
+![Personalizzazioni](assets/images/cfg2-personalizzazioni.jpg)
 
-**Gestione Cliente**: il relatore la vedrà meglio nelle release in arrivo, che porteranno diverse novità. Nel webinar sono visibili gli interruttori **Cliente Zero** e **Ultimo Cliente**, entrambi disattivati.
-
-![Gestione Cliente](assets/images/op-20-gestione-cliente.png)
+!!! note "Annullare l'ultimo scontrino chiuso"
+    Tra le novità c'è la possibilità di far **dimenticare alla bilancia l'ultimo scontrino chiuso** dopo un certo numero di secondi (o dal subtotale). La funzione nasce perché, tenendo sempre in memoria l'ultimo scontrino, un operatore poteva confondersi e, ritoccando il totale, riaprire uno scontrino già emesso. Il nome esatto del campo va verificato sulla bilancia in uso.<!-- verificare: dove si trova il campo e come si chiama -->
 
 ## Verifica
 
-La bilancia è ora in **Multipesata**, con barcode di vendita **2**, barcode multipesata **6** e tastiera **RETAIL => 4 Operatori**. Chiusa questa parte, il relatore dichiara di essere **pronto a spostarsi negli archivi** per creare gli articoli.
+La bilancia è in **Multipesata**, con barcode di vendita **2**, barcode multipesata **6** e tastiera **RETAIL => 4 Operatori**. Tornando in vendita la schermata si adatta alle impostazioni.
+
+## Errori comuni
+
+| Problema | Causa probabile | Rimedio |
+|---|---|---|
+| Lo scontrino non riporta l'intestazione attesa | **Intestazione Corrente** diversa per la modalità in uso | Controlla il valore nelle sezioni Generale, Multipesata, Single Ticket ed Etichetta |
+| L'etichetta non stampa dopo la pesata | **Modo Acquisizione Transazione** è **MAN** | Conferma con il tasto di stampa oppure passa a **AUT** |
+| La tastiera non cambia | **Tipo Tastiera** impostato in una sezione diversa da quella in uso | Imposta **Tipo Tastiera** nella sezione della modalità attiva |
+| Il prezzo non è quello atteso | **Blocco Prezzo** da PLU: vale l'archivio articoli | Controlla il prezzo e il blocco nella scheda dell'articolo |
 
 !!! tip "Prossimo passo"
-    Il relatore passa agli archivi per creare gli articoli, a partire dalle [Categorie Merceologiche](categorie-merceologiche.md). La [Configurazione Tastiera](configurazione-tastiera.md), che qui si intravede soltanto, viene ripresa dopo: avrà più senso capirla una volta creati gli articoli.
+    Con la modalità di lavoro definita si passa agli archivi: [Categorie Merceologiche](categorie-merceologiche.md).

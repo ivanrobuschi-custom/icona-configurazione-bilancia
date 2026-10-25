@@ -43,20 +43,28 @@ copyright: Copyright Custom S.p.A 2026
 
 nav:
   - Home: index.md
-  - Introduzione:
-      - Preambolo: preambolo.md
+  - Conoscere Icona:
+      - Gamma, architettura e applicativi: panoramica-icona.md
+      - Glossario: glossario.md
   - Configurazione di base:
       - Lista Banchi: lista-banchi.md
       - Collegamenti: collegamenti.md
       - Bilancia: bilancia.md
       - Configurazione Operativa: configurazione-operativa.md
-  - Archivi e articoli:
+  - Articoli e archivi:
       - Categorie Merceologiche: categorie-merceologiche.md
       - Articoli PLU: articoli-plu.md
+      - Box ingredienti e tabelle testi: box-ingredienti-testi.md
+      - Tabelle nutrizionali: tabelle-nutrizionali.md
+      - Intestazioni, Operatori e Testi: intestazioni-operatori-testi.md
   - Tastiera:
       - Configurazione Tastiera: configurazione-tastiera.md
       - Schede Tastiera: schede-tastiera.md
-  - Archivi di supporto e formati:
-      - Intestazioni, Operatori e Testi: intestazioni-operatori-testi.md
+  - Etichettatura e tracciabilità:
+      - Tracciabilità e lotti: tracciabilita.md
       - Formati Etichetta: formati-etichetta.md
       - Formati Barcode: formati-barcode.md
+      - Etichettatura in vendita: etichettatura.md
+  - Vendita e promozioni:
+      - Funzioni di vendita: funzioni-di-vendita.md
+      - Promozioni: promozioni.md

@@ -1,115 +1,110 @@
 ---
-title: "Schede Tastiera: raggruppare gli articoli per categoria"
-date: "2025-04-10"
+title: "Schede Tastiera: raggruppare gli articoli per categoria, reparto o tavoli"
+date: "2026-10-25"
 categoria: software Hyperetail
 ---
 
 <!-- categoria assegnata per inferenza: verificare (la bilancia Icona non ha una categoria dedicata nell'elenco) -->
 
-# Schede Tastiera: raggruppare gli articoli per categoria
+# Schede Tastiera: raggruppare gli articoli per categoria, reparto o tavoli
 
-**Target:** tecnico installatore / rivenditore · **Video:** Custom Academy, webinar *Icona configurazione di base* (10/04/2025), dal minuto 51:50 al 55:20.
+**Target:** tecnico installatore / rivenditore.
 
 ## Obiettivo
 
-Al termine sai attivare la modalità **schede** sulla tastiera, creare una scheda per ogni categoria merceologica e personalizzarne i colori, così che gli articoli non siano tutti sulla stessa schermata.
+Attivare le **schede** sulla tastiera, crearne una per ogni categoria merceologica (o per reparto, o per i tavoli) e personalizzarne colori e immagini, così che gli articoli non siano tutti sulla stessa schermata.
 
 ## Prerequisiti
 
-- Le [Categorie Merceologiche](categorie-merceologiche.md) ROSSE e BIANCHE esistono e sono agganciate agli articoli MACINATO e POLLO.
-- I tasti articolo 1 e 2 sono stati creati: vedi [Configurazione Tastiera](configurazione-tastiera.md).
+- Le [Categorie Merceologiche](categorie-merceologiche.md) esistono e sono collegate agli articoli (scheda **Extra**, **Gruppo Merceologico**: [Articoli PLU](articoli-plu.md)).
+- Il **Tipo Tastiera** è *RETAIL => 4 Operatori* o una variante Retail ([Configurazione Operativa](configurazione-operativa.md)).
 
 !!! note "Quando usare le schede"
-    Il relatore la presenta come una **scelta di configurazione**: si può volere tutti gli articoli sulla stessa schermata oppure no. Le schede si attivano sia in Self Service sia in Multipesata; qui si lavora in Multipesata.
+    Avere tutti gli articoli sulla stessa schermata oppure raggrupparli per scheda è una **scelta di configurazione**. Le schede si attivano sia in Self Service sia in Multipesata e, con il tipo di scheda giusto, permettono anche di gestire i tavoli o di passare da un reparto all'altro.
 
-## Passaggi
+## Procedura
 
 ### 1. Apri Schede Tastiera
 
-> Nel video: 52:03
+Dal menu **Setup Bilancia**, sezione **Configurazione**, scorri la lista oltre **Configurazione Tastiera**: compare **Schede Tastiera**.
 
-Dal menu **Setup Bilancia**, sezione **Configurazione**, scorri la lista oltre **Configurazione Tastiera**: compare **Schede Tastiera**. Tocca la voce.
+![Menu Configurazione: la lista prosegue sotto Configurazione Tastiera](assets/images/sch2-01-menu-configurazione.jpg)
 
-![Menu Configurazione: la lista prosegue sotto Configurazione Tastiera](assets/images/sch-01-menu-configurazione.png)
+La lista ha le colonne **Cond. Scheda** (condivisione) e **Numero Schede**.
 
-![Voce Schede Tastiera selezionata](assets/images/sch-02-voce-schede-tastiera.png)
+![Lista delle schede: condivisione 0 e numero schede 4](assets/images/sch2-02-lista-schede-condivisione.jpg)
 
 ### 2. Crea le schede e indica quante sono
 
-> Nel video: 52:13
+1. Tocca **+**: si apre il tastierino **Condivisione ( 0=Banco NN=Bilancia )**. Digita **0** per schede **relative al banco**.
+2. Nella scheda **Generale** il campo **Numero Schede** indica quante schede devono esistere (nell'esempio 4). Nel menu a sinistra compaiono **Scheda 1**, **Scheda 2**... in numero pari a quello scelto.
 
-1. Tocca **+**: si apre il tastierino **Condivisione ( 0=Banco NN=Bilancia )**. Digita **0**, cioè schede **relative al banco**.
-2. Nella scheda **Generale** il campo **Numero Schede** indica quante schede devono esistere. Il relatore ne imposta **due**, perché ne servono realmente due.
+![Numero Schede: menu a tendina fino a 16](assets/images/sch2-03-numero-schede-tendina.jpg)
 
-    ![Numero Schede: 1](assets/images/sch-03-numero-schede-1.png)
+![Numero Schede: 2, con le voci Scheda 1 e Scheda 2](assets/images/sch-04-numero-schede-2.jpg)
 
-    ![Numero Schede: 2, con le voci Scheda 1 e Scheda 2 nel menu a sinistra](assets/images/sch-04-numero-schede-2.png)
+!!! tip "Quante schede e che dimensione"
+    Si possono avere **fino a 16** schede. Con poche schede (per esempio fino a 4) i **tasti di raggruppamento sono più grandi** e più facili da usare per il cliente; più schede si mettono, più il tasto di selezione diventa piccolo, perché lo spazio dedicato alle schede è delimitato.
 
-!!! tip "Quante schede si possono creare"
-    Si possono mettere **fino a 16** schede. Con un numero tra **1 e 4** la scheda è anche **grande visivamente**; più schede si mettono, più il tasto di selezione diventa piccolo, perché lo **spazio dedicato alle schede è delimitato**.
+### 3. Configura una scheda per categoria
 
-### 3. Configura la Scheda 1: ROSSE
+Nel menu a sinistra tocca **Scheda 1**. I campi sono **Nome Scheda**, **Colore Scheda**, **Tipo Scheda**, **Merceologico Scheda PLU** (o **Reparto Associato**, secondo il tipo), **Immagine Scheda** e **Colore Tasti**.
 
-> Nel video: 52:46
+![Scheda 1: nome ROSSE, colore, tipo e merceologico](assets/images/sch2-04-scheda-rosse.jpg)
 
-Nel menu a sinistra tocca **Scheda 1**. I campi sono **Nome Scheda**, **Colore Scheda**, **Tipo Scheda**, **Reparto Associato** o **Merceologico Scheda PLU** (secondo il tipo scelto), **Immagine Scheda**, **Colore Tasti** e altri in fondo.
+1. **Nome Scheda**: scrivi il nome (nell'esempio **ROSSE**).
+2. **Tipo Scheda**: scegli come si comporta la scheda.
 
-![Scheda 1, impostazioni iniziali](assets/images/sch-05-scheda-1-generale.png)
+    ![Menu a tendina Tipo Scheda](assets/images/sch2-05-tipo-scheda-tendina.jpg)
 
-1. **Nome Scheda**: tocca il campo e scrivi **ROSSE**, perché l'intenzione è collegare la scheda ai merceologici.
+| Tipo Scheda | A cosa serve |
+|---|---|
+| **Retail - PLU Merceologico** | Raggruppa i PLU per **categoria merceologica**: è il caso d'uso più comune in Multipesata e Retail |
+| **Retail - PLU Reparto** | Raggruppa i PLU per **reparto**: permette di passare con le schede dal reparto macelleria al reparto salumeria (e viceversa). In una rete di bilance, anche se fisicamente appartengono a reparti diversi, le bilance possono richiamare e vendere gli articoli di altri reparti |
+| **Retail - Tastiera Libera** | Tastiera libera, senza raggruppamento automatico |
+| **SS - Reparto** / **SS - Merceologico** | Per il **Self Service**: la scheda lavora a pittogrammi, per reparto o per merceologico |
+| **Tavoli** | Gestisce i tavoli e i conti sospesi ([Funzioni di vendita](funzioni-di-vendita.md)) |
 
-    ![Tastiera per il Nome Scheda](assets/images/sch-06-nome-scheda-tastiera.png)
+Gli altri campi:
 
-    ![Scheda 1 chiamata ROSSE](assets/images/sch-07-scheda-rosse.png)
+- **Merceologico Scheda PLU**: con la lente abbina la scheda alla categoria (nell'esempio **ROSSE**, codice **1**). È un collegamento **bilaterale**: il nome della scheda è connesso al gruppo merceologico.
 
-2. **Tipo Scheda**: apri il menu a tendina. Le voci sono **SS - Reparto**, **SS - Merceologico**, **Retail - PLU Reparto**, **Retail - PLU Merceologico** e **Retail - Tastiera Libera**.
+    ![Scheda ROSSE: Retail - PLU Merceologico, merceologico 1](assets/images/sch-09-scheda-retail-plu-merceologico.jpg)
 
-    ![Menu a tendina Tipo Scheda](assets/images/sch-08-tipo-scheda-tendina.png)
+- **Colore Scheda** e **Colore Tasti**: personalizzazione estetica con un menu a tendina di colori (nell'esempio *LightGreen*, *LightSkyBlue*, *LightSalmon*, *LightCyan*, *Aqua*).
+- **Immagine Scheda**: serve quando usi la scheda in **Self Service** per il raggruppamento; in Retail non serve.
 
-    Le voci **SS** riguardano il Self Service: anche in quella modalità si può lavorare a schede, per reparto o per merceologico. In **Multipesata e Retail** si può scegliere di passare da **reparto** o da **merceologico**. Avendo creato i merceologici, il relatore sceglie **Retail - PLU Merceologico**.
+### 4. Configura le altre schede
 
-3. **Merceologico Scheda PLU**: tocca la **lente** e abbina la categoria **ROSSE** (codice **1**).
+Ripeti per ogni scheda. Per le **BIANCHE** il **Merceologico Scheda PLU** è il codice **2**, con colori diversi.
 
-    ![Scheda ROSSE: Retail - PLU Merceologico, merceologico 1](assets/images/sch-09-scheda-retail-plu-merceologico.png)
+![Scheda 2: BIANCHE, Retail - PLU Merceologico, merceologico 2](assets/images/sch2-06-scheda-bianche.jpg)
 
-4. Facoltativo: un minimo di **personalizzazione estetica**, cioè i colori e le cornici. **Colore Scheda** e **Colore Tasti** hanno un menu a tendina di colori; il relatore prova per la Scheda 1 un colore diverso (nella schermata *LightGreen* per la scheda e *LightSkyBlue* per i tasti).
+Ogni scheda può avere un **utilizzo diverso**. Per esempio la quarta scheda si chiama **TAVOLI**, ha **Tipo Scheda** *Tavoli* e non è collegata a un merceologico, perché serve a raggruppare i tavoli che si gestiscono direttamente dalla bilancia.
 
-    ![Colori di Scheda 1 modificati](assets/images/sch-10-colore-tasti.png)
-
-### 4. Configura la Scheda 2: BIANCHE
-
-> Nel video: 53:49
-
-Passa alla **Scheda 2** e ripeti gli stessi passaggi:
-
-1. **Nome Scheda**: **BIANCHE**.
-
-    ![Tastiera per il Nome Scheda BIANCHE](assets/images/sch-11-nome-scheda-bianche.png)
-
-    ![Scheda 2 chiamata BIANCHE](assets/images/sch-12-scheda-2-bianche.png)
-
-2. **Tipo Scheda**: di nuovo un merceologico, quindi **Retail - PLU Merceologico**.
-
-    ![Menu a tendina Tipo Scheda della Scheda 2](assets/images/sch-13-scheda-2-tipo-tendina.png)
-
-3. Collegala al merceologico **BIANCHE** (codice **2**) e, se vuoi, cambia i colori.
-
-    ![Scheda 2: merceologico 2](assets/images/sch-14-scheda-2-merceologico.png)
+![Scheda 4: TAVOLI con Tipo Scheda Tavoli](assets/images/sch2-07-scheda-tavoli-tipo.jpg)
 
 ## Verifica
 
-Esci dal configuratore e torna in vendita. Sulla tastiera compaiono i due pulsanti di scheda **ROSSE** e **BIANCHE**. Selezionando una scheda, sotto di essa compare l'articolo collegato alla sua categoria: **MACINATO** sotto ROSSE.
+Esci dal configuratore e torna in vendita. Sulla tastiera compaiono i pulsanti di scheda **ROSSE**, **BIANCHE**, **VARIE**, **TAVOLI**. Selezionando una scheda compaiono gli articoli collegati alla sua categoria: **MACINATO** e **POLPETTONE RIPIENO** sotto ROSSE.
 
-![Vendita: schede ROSSE e BIANCHE, MACINATO sotto ROSSE](assets/images/sch-15-vendita-con-schede.png)
+![Vendita: schede ROSSE, BIANCHE, VARIE e TAVOLI, con gli articoli sotto ROSSE](assets/images/trac-26-vendita-tasti-lotto.jpg)
 
-Selezionando **BIANCHE** compare **POLLO**. Sullo schermo si vede anche il messaggio **Programmazione Bilancia ....**, che compare quando la bilancia riapplica la programmazione.
+Selezionando **BIANCHE** compaiono gli articoli delle carni bianche (nell'esempio con le immagini sui tasti). La bilancia mostra il messaggio **Programmazione Bilancia ....** quando riapplica la programmazione.
 
-![Vendita: scheda BIANCHE selezionata, POLLO sotto BIANCHE](assets/images/sch-16-vendita-schede-articoli.png)
+![Vendita: scheda BIANCHE selezionata con i suoi articoli](assets/images/vend2-02-operatore-occupato.jpg)
 
-Il relatore commenta che il tasto per la pulizia dello schermo e la ricerca alfanumerica sono quelli già visti nel webinar precedente, e che **seguendo questo iter la programmazione è abbastanza lineare e semplice**: si costruisce e si personalizza la bilancia per il cliente man mano.
+!!! note "Gestione Elimina Code e Gestione Ordini"
+    Nello stesso menu **Configurazione** trovi anche **Gestione Elimina Code** e **Gestione Ordini**: in questa configurazione di base non servono.
 
-!!! note "Parti saltate"
-    Il relatore salta per ora **Gestione Elimina Code** e **Gestione Ordini**, che si trovano nello stesso menu **Configurazione**.
+## Errori comuni
+
+| Problema | Causa probabile | Rimedio |
+|---|---|---|
+| Una scheda non mostra articoli | Gli articoli non sono collegati alla categoria della scheda | In **Extra** dell'articolo imposta **Gruppo Merceologico** |
+| La scheda mostra gli articoli sbagliati | **Merceologico Scheda PLU** punta a un'altra categoria | Controlla il codice con la lente |
+| Il tasto della scheda è piccolo | Troppe schede | Riduci il numero di schede |
+| Non compaiono le schede | Tastiera diversa dalla Retail | Controlla il **Tipo Tastiera** in [Configurazione Operativa](configurazione-operativa.md) |
 
 !!! tip "Prossimo passo"
-    Si passa agli archivi minori: [Intestazioni, Operatori e Testi](intestazioni-operatori-testi.md).
+    Per gli archivi di supporto: [Intestazioni, Operatori e Testi](intestazioni-operatori-testi.md).

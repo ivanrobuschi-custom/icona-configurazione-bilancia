@@ -1,155 +1,165 @@
 ---
-title: "Articoli PLU: creare i primi due articoli"
-date: "2025-04-10"
+title: "Articoli PLU: anagrafica e schede dell'articolo"
+date: "2026-10-25"
 categoria: software Hyperetail
 ---
 
 <!-- categoria assegnata per inferenza: verificare (la bilancia Icona non ha una categoria dedicata nell'elenco) -->
 
-# Articoli PLU: creare i primi due articoli
+# Articoli PLU: anagrafica e schede dell'articolo
 
-**Target:** tecnico installatore / rivenditore · **Video:** Custom Academy, webinar *Icona configurazione di base* (10/04/2025), dal minuto 38:46 al 49:30.
+**Target:** tecnico installatore / rivenditore.
 
 ## Obiettivo
 
-Al termine sai creare un articolo PLU con prezzo e tipo di vendita, conosci le schede di personalizzazione di ogni articolo (Stampa, Tracciabilità, Barcode, Testi, Immagini, Extra) e sai collegare l'articolo a una categoria merceologica.
+Creare un articolo PLU con prezzo e tipo di vendita, conoscere le **schede di personalizzazione** (Stampa, Tracciabilità, Barcode, Testi, Immagini, Extra) e collegare l'articolo a categoria, tracciabilità, promozioni e immagini.
 
 ## Prerequisiti
 
-- Le [Categorie Merceologiche](categorie-merceologiche.md) **ROSSE** e **BIANCHE** sono state create.
-- Il banco su cui lavori è quello attivo: in alto a destra la pagina mostra **Banco 02** e il numero del **PLU** in modifica. Gli articoli appartengono al banco, quindi il PLU numero 1 della macelleria è diverso dal PLU numero 1 della salumeria.
+- Le [Categorie Merceologiche](categorie-merceologiche.md) sono state create.
+- Il banco su cui lavori è quello attivo: in alto a destra la pagina mostra **Banco 02** e il numero del **PLU** in modifica. Gli articoli appartengono al banco: il PLU numero 1 della macelleria è diverso dal PLU numero 1 della salumeria.
 
 !!! note "Bilancia di partenza"
-    Il relatore parte da una bilancia **completamente vuota**. Quando arriva la bilancia si possono trovare già programmati tre o quattro articoli di esempio: non incidono sulla programmazione che si fa qui.
+    Una bilancia nuova può avere già programmati tre o quattro articoli di esempio: non incidono sulla programmazione che si fa qui. Tutti i campi sono modificabili anche tramite aggiornamento diretto sul database o tracciati di file esterni.
 
-## Passaggi
+## Procedura
 
 ### 1. Apri Articoli PLU
 
-> Nel video: 38:46
+Da **Archivi Dati** tocca **Articoli PLU**. La lista mostra le colonne **PLU**, **Descrizione**, **Prezzo**, **Tipo**, **B.Prz**, **Attivo** e **Tracc.**. Il pulsante **+** crea un articolo.
 
-Da **Archivi Dati** tocca **Articoli PLU**. La lista è vuota: le colonne sono **PLU**, **Descrizione**, **Prezzo**, **Tipo**, **B.Prz**, **Attivo** e **Tracc.**. Il pulsante **+** crea un articolo.
+![Voce Articoli PLU nel menu Archivi Dati](assets/images/plu-01-voce-articoli-plu.jpg)
 
-![Voce Articoli PLU nel menu Archivi Dati](assets/images/plu-01-voce-articoli-plu.png)
+![Lista degli articoli: ogni riga mostra tipo, blocco prezzo, stato e tracciabilità](assets/images/art2-01-lista-articoli.jpg)
 
-![Lista degli articoli, vuota](assets/images/plu-02-lista-vuota.png)
+### 2. Crea un articolo: scheda Generale
 
-### 2. Crea l'articolo 1: la parte Generale
+Tocca **+**, digita il **Codice PLU** (per esempio **6**) e conferma con **Ok**. Si apre la scheda **Generale**: nella maggior parte dei casi basta questa per programmare la bilancia.
 
-> Nel video: 38:49
+![Tastierino del Codice PLU](assets/images/art2-02-codice-plu.jpg)
 
-Tocca **+**, digita il **Codice PLU** **1** e conferma con **Ok**.
+![Scheda Generale del nuovo PLU](assets/images/art2-03-scheda-generale.jpg)
 
-![Tastierino del Codice PLU](assets/images/plu-03-codice-plu.png)
+1. **Descrizione (1)**: tocca il campo e scrivi il nome con la tastiera. Esiste una **Descrizione (2)**, utile quando la prima non basta a definire l'articolo o per le varie uscite di stampa.
 
-Si apre la scheda **Generale**. Per il relatore, la parte generale **nella maggior parte dei casi basta per programmare la bilancia**.
+    ![Tastiera per la Descrizione (1)](assets/images/art2-04-descrizione-tastiera.jpg)
 
-![Scheda Generale del nuovo PLU](assets/images/plu-04-scheda-generale.png)
+2. **Prezzo**: il prezzo di riferimento (per esempio 5 euro).
 
-1. **Descrizione (1)**: tocca il campo, scrivi il nome con la tastiera e conferma con **Ok**. Il relatore scrive **MACINATO**. Esiste anche una **Descrizione (2)**, utile per le varie uscite di stampa.
+    ![Tastierino del Prezzo](assets/images/art2-05-prezzo-tastierino.jpg)
 
-    ![Tastiera per la Descrizione (1)](assets/images/plu-05-descrizione-tastiera.png)
+3. **Tipo Articolo**: a **kg**, a pezzo (**Pz**) o **Ng**. La scelta determina il modo di vendita.
 
-    ![Descrizione MACINATO](assets/images/plu-06-descrizione-macinato.png)
+    ![Menu Tipo Articolo: kg, Pz, Ng](assets/images/art2-06-tipo-articolo-tendina.jpg)
 
-2. **Prezzo**: il relatore imposta un prezzo di riferimento di **19 euro al chilogrammo**.
+4. **Valore Tara (g)**: si può assegnare una tara già in anagrafica. Serve soprattutto per l'etichettatura.
+5. **Pezzi Predeterminati**: per gli articoli a pezzo, i pezzi proposti (nell'esempio 1).
+6. **Blocco Prezzo**: blocca il prezzo del PLU. Il comportamento generale dipende dalla [Configurazione Operativa](configurazione-operativa.md).
+7. **Data Scadenza**, **Data Stagionatura**, **Data Produzione**: servono all'etichettatura (vedi sotto).
+8. **PLU Attivo**: l'interruttore deve essere acceso (verde).
 
-    ![Tastierino del Prezzo](assets/images/plu-07-prezzo-tastierino.png)
+![Date e interruttore PLU Attivo](assets/images/art2-07-date-plu-attivo.jpg)
 
-    ![Prezzo 19 e Tipo Articolo kg](assets/images/plu-08-prezzo-impostato.png)
+!!! tip "Date in giorni o in data pura"
+    Toccando un campo data compare il tastierino **Data Scadenza ( ... in Giorni )**. Se digiti un numero breve (per esempio **20**) la bilancia lo interpreta come **giorni**; se continui a scrivere, il numero si trasforma direttamente in una **data**, indipendente dal giorno in cui si etichetta. Se non indichi la data di produzione, il sistema usa la data odierna; puoi forzarla per etichettare in modo retroattivo (o con una data futura). Il numero scelto decide se la scadenza è espressa in giorni o in data pura.
 
-3. **Tipo Articolo**: determina se l'articolo è **a pezzo** o **a peso**; qui è **kg**.
-4. **Valore Tara (g)**: si può assegnare già un valore di tara. Nel caso del webinar non serve; serve in primo luogo per l'etichettatura.
-5. **Blocco Prezzo**: è il settaggio accennato nella [Configurazione Operativa](configurazione-operativa.md). Resta disattivato.
+![Tastierino Data Scadenza in giorni](assets/images/art2-08-data-scadenza-giorni.jpg)
 
-    ![Valore Tara e Tipo Articolo](assets/images/plu-09-tipo-articolo-tara.png)
+Fatto questo l'articolo è già creato e compare nell'archivio.
 
-6. **Data Scadenza**, **Data Stagionatura**, **Data Produzione**: servono all'etichettatura e permettono di indicare date diverse da quella odierna. Toccando il campo il tastierino chiede il valore **in giorni**. Il relatore osserva che si potrebbe etichettare con una data nel futuro o nel passato, cosa che in etichettatura non si dovrebbe fare, ma la funzione è stata lasciata libera nella bilancia.
+### 3. Le schede dell'articolo
 
-    ![Tastierino Data Scadenza in giorni](assets/images/plu-11-data-scadenza-tastierino.png)
+Rientrando nell'articolo, a sinistra compaiono le schede **legate all'articolo stesso**: **Generale**, **Stampa**, **Tracciabilità**, **Barcode**, **Testi**, **Immagini**, **Extra**. Valgono **al di là di quanto impostato nelle configurazioni generali**: la scheda dell'articolo prevale.
 
-7. **PLU Attivo**: l'interruttore deve essere acceso (verde).
+#### Stampa
 
-    ![Date e interruttore PLU Attivo](assets/images/plu-10-date-e-plu-attivo.png)
+Quando si vende l'articolo e si etichetta può stampare un **layout grafico particolare per quell'articolo**. Con la lente si apre l'archivio a cui sono collegate le tabelle. Se lasci **0** come formato, la bilancia usa il formato di default delle opzioni di etichetta oppure il formato che cambi al volo in etichettatura (vedi [Etichettatura in vendita](etichettatura.md)).
 
-Fatto questo, l'articolo è già creato. Uscendo dalla scheda si ritrova nell'archivio l'articolo **MACINATO**, a 19,00 al kg.
+Campi: **Formato Etichetta**, **Formato Etichetta Totale (1)**, **(2)** e **(3)**, **Formato Riga Scontrino**, **Formato Coupon**. I formati totali servono per chi fa confezionamenti a più livelli: per esempio una scatola, poi il pallet, con un'etichetta totale che riepiloga le informazioni.
 
-![Lista con l'articolo MACINATO](assets/images/plu-12-lista-con-macinato.png)
+![Scheda Stampa dell'articolo](assets/images/art2-13-stampa.jpg)
 
-### 3. Rientra nell'articolo: le schede di personalizzazione
+#### Tracciabilità
 
-> Nel video: 41:18
+Per le carni e per tutti i prodotti che lo richiedono. Campi: **Tracciabilità** (nella lista la colonna **Tracc.** mostra *Star* per **Standard**, oppure *No*) e **Lotto Predefinito**. Il lotto predefinito di norma **non si assegna** per i prodotti tracciati, perché il lotto cambia di settimana in settimana in base alla carne acquistata. Come si definiscono definizioni e lotti: [Tracciabilità e lotti](tracciabilita.md).
 
-Rientrando nello stesso articolo, a sinistra compare una serie di schede **legate all'articolo stesso**: **Generale**, **Stampa**, **Tracciabilità**, **Barcode**, **Testi**, **Immagini**, **Extra**. Valgono **al di là di quanto impostato nelle configurazioni generali**.
+![Scheda Tracciabilità dell'articolo: tipo Standard](assets/images/art2-14-tracciabilita-standard.jpg)
 
-**Stampa** (41:41). Quando si vende l'articolo e si etichetta, può stampare un **layout grafico particolare per quell'articolo**. Con la lente si apre l'archivio a cui sono collegate le tabelle. Il discorso vale anche per i **totali**, per il **formato riga scontrino** e per il **coupon**. Campi: **Formato Etichetta**, **Formato Etichetta Totale (1)**, **(2)** e **(3)**, **Formato Riga Scontrino**, **Formato Coupon**.
+#### Barcode
 
-![Scheda Stampa dell'articolo](assets/images/plu-13-stampa.png)
+Permette di personalizzare il barcode sul **singolo articolo**: oltre al barcode generico programmato, puoi indicare un EAN specifico che non segue la struttura impostata sulla bilancia. Campi: **Formato Barcode Etichetta**, **Barcode Etichetta**, **Formato Barcode Etichetta Totale (1)**, **(2)** e relativi barcode. Con due barcode (articolo e totale) puoi identificare lo stesso articolo con due EAN diversi quando lo usi in etichettatura o su un formato di etichetta totale.
 
-**Tracciabilità** (42:12). Per la carne andrebbe attivata. Il relatore precisa che oggi non si parla né di tracciabilità né di lotti. Campi: **Tracciabilità** (nel webinar *No*) e **Lotto Predefinito**.
+![Scheda Barcode dell'articolo](assets/images/art2-15-barcode.jpg)
 
-![Scheda Tracciabilità dell'articolo](assets/images/plu-14-tracciabilita.png)
+Per gli **articoli a pezzo** venduti con lo **scanner** (per esempio una confezione di caramelle) il campo **Barcode Scanner** riceve l'EAN letto fisicamente dallo scanner collegato alla bilancia.
 
-**Barcode** (42:26). Permette di personalizzare il barcode sul **singolo articolo**: oltre al barcode generico programmato, per questo articolo si può indicare un EAN che non fa riferimento alla struttura impostata sulla bilancia. Campi: **Formato Barcode Etichetta**, **Barcode Etichetta**, **Formato Barcode Etichetta Totale (1)** e **(2)** con i relativi barcode.
+![Articolo a pezzo con Barcode Scanner valorizzato](assets/images/art2-27-golia-barcode-scanner.jpg)
 
-![Scheda Barcode dell'articolo](assets/images/plu-15-barcode.png)
+#### Testi
 
-**Testi** (42:49). È un capitolo importante. La bilancia permette di avere **più box di testo**, per esempio gli ingredienti, associati al singolo articolo.
+La bilancia gestisce **più box di testo** per articolo (ingredienti, allergeni, istruzioni) e può collegare **tabelle di testo** e la **tabella nutrizionale**. È un capitolo ampio: vedi [Box ingredienti e tabelle testi](box-ingredienti-testi.md) e [Tabelle nutrizionali](tabelle-nutrizionali.md).
 
-![Scheda Testi dell'articolo](assets/images/plu-16-testi.png)
+![Scheda Testi dell'articolo: tre box e tre puntatori](assets/images/art2-16-testi.jpg)
 
-- Commercialmente apre molte possibilità: un **unico anagrafico** di articoli può soddisfare l'esigenza dell'etichettatura **multilingua**. Si attiva il **Testo PLU (1)** per gli ingredienti, e il relatore lo scrive in italiano.
-- Dalla tastiera si attivano **grassetto**, **corsivo** e **sottolineato** (tasti **B**, **I** e **a**): servono a evidenziare gli **allergeni** in modo molto evidente sullo scontrino.
-- Il testo è **autolivellante**: si può scrivere a lungo sul primo rigo, e quando viene stampato sull'etichetta **si compatta**. Non serve contare i caratteri né andare a capo, anche se serve spazio per gli ingredienti. Vale per tutti i box.
-- Nel **Testo PLU (2)** si possono scrivere gli stessi ingredienti in un'altra lingua, oppure ripetere gli **allergeni**: l'etichettatura impone non solo di evidenziarli ma di riportarli in una tabella a parte nello stesso formato etichetta. Oppure si può usare il box 2 per i **consigli di cottura**.
+#### Immagini
 
-    ![Tastiera del Testo PLU con tasti di formattazione](assets/images/plu-17-testo-tastiera.png)
+Campi: **Immagine Tasto**, **Immagine Self Service**, **Immagine Promozionale** e **Immagine B/N per Stampa**. Con la **lente** si richiama un'immagine dall'archivio immagini della bilancia; il cestino la rimuove.
 
-- In alternativa ai testi scritti si possono collegare **tabelle di testo già preconfigurate** (campi **Puntatore Tabella Testi (1)**, **(2)** e **(3)**), presenti nello stesso archivio. Esempio del relatore: scrivere una sola volta "conservare in frigo a circa 4 gradi", oppure gli ingredienti del pane (acqua, farina, lievito) da riusare su pane, panini e rosette senza ripeterli. Entrambe le possibilità sono utilizzabili sui formati di stampa e sui formati etichetta.
-- Qui si collega anche la **Tabella Nutrizionale** dell'articolo.
+![Scheda Immagini dell'articolo](assets/images/art2-22-immagini.jpg)
 
-    ![Puntatori alle tabelle di testo e tabella nutrizionale](assets/images/plu-18-testi-tabelle.png)
+| Immagine | Quando viene mostrata | Dimensioni |
+|---|---|---|
+| **Immagine Tasto** | Sul tasto dell'articolo nella tastiera Retail | **120x120 pixel** per il tasto grande quadrato, **60x60 pixel** per il tasto piccolo standard, **60x120** o **120x60** per i tasti doppi in verticale o in orizzontale |
+| **Immagine Self Service** | Quando la bilancia lavora in Self Service | secondo il formato del tasto |
+| **Immagine Promozionale** | Sul display lato cliente, quando si tocca l'articolo | |
+| **Immagine B/N per Stampa** | Stampata sull'etichetta, in **BMP** | |
 
-**Immagini** (45:55). Le immagini attivano più modalità di lavoro della bilancia. I campi sono **Immagine Tasto**, **Immagine Self Service**, **Immagine Promozionale** e **Immagine B/N per Stampa**.
+![Immagini tasto e promozionale valorizzate](assets/images/art2-25-immagini-valorizzate.jpg)
 
-![Scheda Immagini dell'articolo](assets/images/plu-19-immagini.png)
+- Più immagini ci sono nella bilancia (anche un migliaio) e più sono ad alta risoluzione, più la bilancia impiega circa **un secondo** a mostrare l'elenco.
+- Le immagini **non vengono ridimensionate**. Su un tasto grande da 120x120 un'immagine 60x60 non viene mostrata: al suo posto la bilancia visualizza un segnaposto con la dicitura "120x120 pixel" e una croce rossa. Sui tasti doppi, invece, un'immagine 60x60 viene mostrata **centrata**. Vedi [Funzioni di vendita](funzioni-di-vendita.md).
+- **Immagine in stampa.** Una foto in bianco e nero stampata sull'etichetta ha poco significato, ma il campo si può sfruttare in altri modi: per esempio un **QR code** che apre il profilo social dell'esercente o un ricettario. Si converte il QR code in un'immagine **BMP** e la si aggancia al formato etichetta. Con uno spazio ridotto si ottiene una sorta di pubblicità gratuita (vedi [Formati Etichetta](formati-etichetta.md)).
 
-- Con la **lente** si richiama un'immagine dall'**archivio di immagini** presente nella bilancia. L'**immagine del tasto** è quella mostrata sul tasto, per esempio in modalità Self Service; l'**immagine promozionale** permette di avere un'immagine specifica, diversa dal prodotto, quando ci si seleziona sopra. Si possono usare anche immagini ad alta risoluzione.
-- Più immagini ci sono nella bilancia (il relatore ne ha circa un migliaio) e più sono ad alta risoluzione, più la bilancia impiega **circa un secondo** prima di mostrare l'elenco.
+#### Extra
 
-    ![Archivio immagini per l'immagine del tasto](assets/images/plu-20-archivio-immagini.png)
+Campi: **Prezzo Alternativo**, **Gruppo Merceologico**, **Iva %**, **Sconto %** e **ID Promozione**.
 
-- **Novità rispetto alle bilance del passato**: si può agganciare all'articolo un'**immagine in stampa**. Una foto in bianco e nero stampata sull'etichetta ha poco significato, ma il campo si può sfruttare in altri modi: per esempio un **QR code** che apre il link al profilo Facebook o Instagram del titolare, o un ricettario. Si converte il QR code in un'immagine **BMP** e la si aggancia al formato etichetta. Con uno spazio realmente piccolo sull'etichetta si ottiene una sorta di **pubblicità praticamente gratuita**.
+![Scheda Extra dell'articolo](assets/images/art2-24-extra-valorizzato.jpg)
 
-**Extra** (48:08). Qui sono visibili **Codice Alternativo**, **Prezzo Alternativo**, **Gruppo Merceologico**, **Iva %**, **Sconto %** e **ID Promozione**. Le promozioni e gli sconti verranno spiegati più avanti. Ora serve **agganciare l'articolo a un merceologico**, in questo caso **ROSSE**, per ottenere poi in vendita il concetto delle schede della tastiera.
+- **Gruppo Merceologico**: collega l'articolo a una categoria. È il collegamento che fa comparire l'articolo nella scheda corrispondente della tastiera. La lente apre l'elenco delle categorie.
 
-![Scheda Extra dell'articolo](assets/images/plu-21-extra.png)
+    ![Elenco delle categorie merceologiche](assets/images/art2-10-lista-categorie.jpg)
 
-Il campo **Gruppo Merceologico** ha una lente che apre l'elenco delle categorie.
+- **Prezzo Alternativo**: se serve un **doppio listino** si può definire un secondo prezzo, comodo soprattutto per il confezionamento per conto terzi. Si passa da un listino all'altro con un tasto (vedi [Funzioni di vendita](funzioni-di-vendita.md)).
 
-![Elenco delle categorie merceologiche](assets/images/plu-22-gruppo-merceologico-lista.png)
+    ![Tastierino del Prezzo Alternativo](assets/images/art2-23-prezzo-alternativo-tastierino.jpg)
 
-### 4. Crea l'articolo 2: POLLO
+- **ID Promozione**: collega l'articolo a una promozione (vedi [Promozioni](promozioni.md)).
 
-> Nel video: 48:32
+    ![Articolo collegato alla promozione 2](assets/images/art2-28-golia-extra-promozione.jpg)
 
-Per avere un secondo esempio, tocca **+**, crea l'articolo **2** con descrizione **POLLO** e prezzo **20,00**.
+## Esempio: articolo a pezzo
 
-![Descrizione POLLO](assets/images/plu-23-secondo-articolo-pollo.png)
+Un articolo a pezzo si crea come un articolo a peso, impostando **Tipo Articolo** su **Pz** e **Pezzi Predeterminati**. Nell'esempio un pacchetto da 250 g viene venduto a 2,50 con **Barcode Scanner** valorizzato.
 
-Poi vai direttamente in **Extra** e, come **Gruppo Merceologico**, aggancialo alle **BIANCHE** (codice **2**).
-
-![Extra dell'articolo POLLO con gruppo merceologico 2](assets/images/plu-24-extra-pollo-bianche.png)
+![Articolo a pezzo: prezzo 2,50, tipo Pz, pezzi predeterminati 1](assets/images/art2-26-golia-generale.jpg)
 
 ## Verifica
 
-Nella lista degli articoli devono esserci **1 MACINATO**, 19,00 al kg, e **2 POLLO**, 20,00 al kg, entrambi attivi.
+Nella lista l'articolo compare con **Prezzo**, **Tipo**, **Attivo** acceso e **Tracc.** secondo la programmazione.
 
-![Lista con i due articoli MACINATO e POLLO](assets/images/plu-25-lista-due-articoli.png)
+![Lista con gli articoli, tra cui l'articolo a pezzo](assets/images/art2-11-lista-con-ali-pollo.jpg)
 
-Il relatore si ferma qui, senza personalizzare operatori e tare, e torna in vendita per vedere il risultato. La bilancia impiega un momento, mostra il messaggio **Programmazione Bilancia ...** e carica il **layout grafico del retail**. I tasti non sono ancora visibili, perché la tastiera è ancora vuota.
+Esci dal configuratore e torna in vendita: la bilancia mostra il messaggio **Programmazione Bilancia ...** e ricarica il layout. I tasti compaiono quando l'articolo è collegato a una tastiera ([Configurazione Tastiera](configurazione-tastiera.md)) o a una scheda ([Schede Tastiera](schede-tastiera.md)).
 
-![Ritorno alla schermata di vendita con il layout retail](assets/images/plu-26-ritorno-in-vendita.png)
+## Errori comuni
+
+| Problema | Causa probabile | Rimedio |
+|---|---|---|
+| L'articolo non compare nella scheda della tastiera | **Gruppo Merceologico** non impostato o diverso da quello della scheda | Nella scheda **Extra** collega l'articolo alla categoria giusta |
+| L'etichetta non riporta la tracciabilità | Articolo con **Tracciabilità** disattivata, oppure banco senza tracciabilità | Attiva la tracciabilità sul banco e sull'articolo ([Tracciabilità e lotti](tracciabilita.md)) |
+| L'immagine non compare sul tasto | Dimensioni non adatte al tasto o immagini tastiera disattivate | Usa 60x60 per il tasto standard e 120x120 per il tasto grande, e attiva **Abilita immagini tastiera RETAIL** |
+| La scadenza è sbagliata | Il numero digitato è stato interpretato come data | Controlla se il campo mostra giorni o data pura |
 
 !!! tip "Prossimo passo"
-    Per collegare gli articoli ai tasti si attivano le schede e si configura la tastiera: pagina [Configurazione Tastiera](configurazione-tastiera.md).
+    Per collegare gli articoli ai tasti: [Configurazione Tastiera](configurazione-tastiera.md).

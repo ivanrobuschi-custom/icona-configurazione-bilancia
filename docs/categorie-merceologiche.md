@@ -1,94 +1,97 @@
 ---
-title: "Categorie Merceologiche: creare ROSSE e BIANCHE"
-date: "2025-04-10"
+title: "Categorie Merceologiche: raggruppare gli articoli"
+date: "2026-10-25"
 categoria: software Hyperetail
 ---
 
 <!-- categoria assegnata per inferenza: verificare (la bilancia Icona non ha una categoria dedicata nell'elenco) -->
 
-# Categorie Merceologiche: creare ROSSE e BIANCHE
+# Categorie Merceologiche: raggruppare gli articoli
 
-**Target:** tecnico installatore / rivenditore · **Video:** Custom Academy, webinar *Icona configurazione di base* (10/04/2025), dal minuto 36:44 al 38:49.
+**Target:** tecnico installatore / rivenditore.
 
 ## Obiettivo
 
-Al termine sai creare le **categorie merceologiche** nell'archivio della bilancia e sai a cosa servono, così da poterle collegare agli articoli.
+Creare le **categorie merceologiche** nell'archivio della bilancia e collegarle agli articoli, alle schede della tastiera e (se serve) all'IVA e agli sconti.
+
+## Cosa sono
+
+Le categorie sono **famiglie** in cui raggruppare gli articoli, come i reparti di un gestionale. **Non sono obbligatorie**, ma conviene crearle **prima degli articoli**, soprattutto con la tastiera **RETAIL => 4 Operatori** e le [schede](schede-tastiera.md) al richiamo del PLU.
+
+Servono a:
+
+- avere una **tastiera più comoda** per il cliente, perché permettono di passare da una pagina all'altra in modalità di lavoro;
+- fini di **statistica**;
+- **ordinare** gli archivi e gli articoli collegati;
+- gestire correttamente l'**IVA in vendita**: nella costruzione degli EAN stampabili sotto lo scontrino (o di un QR code) si può richiamare un dato collegato alle categorie, per raggruppare gli articoli per aliquota (per esempio 10% o 4%) senza specificarla articolo per articolo;
+- collegare uno **sconto diretto** alla categoria, aprendo il capitolo delle [promozioni](promozioni.md).
+
+Non c'è un limite al numero di categorie: puoi usare qualsiasi codice (per esempio la categoria **10** chiamata **PANETTERIA**).
 
 ## Prerequisiti
 
 - La [Configurazione Operativa](configurazione-operativa.md) è completata.
-- Si parte da una bilancia **completamente vuota**: nessun articolo e nessuna categoria.
+- Si parte da una bilancia **vuota**: nessun articolo e nessuna categoria.
 
-## Perché creare le categorie per prime
-
-Il relatore passa agli **archivi** e lascia per dopo la configurazione della tastiera, perché avrà più senso capirla quando saranno creati gli articoli. Creando gli articoli si creano anche i merceologici ad essi collegati, quindi **in prima battuta si creano le categorie**.
-
-Le categorie merceologiche **non sono obbligatorie** nella bilancia. Possono servire per:
-
-- avere una **configurazione della tastiera più comoda** per il cliente, perché permettono di passare da una pagina all'altra in modalità di lavoro;
-- scopi di **statistica**;
-- **ordinare gli archivi** e gli articoli ad esse collegati.
-
-## Passaggi
+## Procedura
 
 ### 1. Apri Archivi Dati
 
-> Nel video: 36:44
+Dal menu **Setup Bilancia** tocca **Archivi Dati**. Compaiono **Articoli PLU**, **Intestazioni**, **Categorie Merceologiche**, **Operatori**, **Tare** e, scorrendo, **Testi**, **Formati Etichetta**, **Tabelle Nutrizionali** e **Promozioni**.
 
-Dal menu **Setup Bilancia** tocca **Archivi Dati**. A destra compaiono **Articoli PLU**, **Intestazioni**, **Categorie Merceologiche**, **Operatori**, **Tare** e altre voci più in basso.
-
-![Menu Archivi Dati](assets/images/cat-01-archivi-dati.png)
+![Menu Archivi Dati](assets/images/cat-01-archivi-dati.jpg)
 
 ### 2. Seleziona Categorie Merceologiche
 
-> Nel video: 37:04
+![Voce Categorie Merceologiche selezionata](assets/images/cat-02-voce-categorie.jpg)
 
-Tocca **Categorie Merceologiche**.
+La lista parte vuota. Le colonne sono **Codice**, **Descrizione**, **Iva %** e **Sconto**. Il pulsante **+** crea una nuova categoria.
 
-![Voce Categorie Merceologiche selezionata](assets/images/cat-02-voce-categorie.png)
-
-La lista è vuota: le colonne sono **Codice**, **Descrizione**, **Iva %** e **Sconto**. Il pulsante **+** crea una nuova categoria.
-
-![Lista delle categorie, vuota](assets/images/cat-03-lista-vuota.png)
+![Lista delle categorie, vuota](assets/images/cat-03-lista-vuota.jpg)
 
 ### 3. Crea la prima categoria
 
-> Nel video: 37:24
+Tocca **+**: si apre il tastierino **Codice Categoria Merceologica**. Digita **1** e conferma con **Ok**. Si apre la scheda **Parametri** con **Codice Categoria Merceologica**, **Descrizione Categoria**, **Iva %** e **Sconto %**.
 
-Tocca **+**: si apre il tastierino **Codice Categoria Merceologica**. Digita **1** e conferma con **Ok**. Si apre la scheda con **Codice Categoria Merceologica**, **Descrizione Categoria**, **Iva %** e **Sconto %**.
+![Tastierino Codice Categoria Merceologica](assets/images/cat-04-codice-categoria.jpg)
 
-![Tastierino Codice Categoria Merceologica](assets/images/cat-04-codice-categoria.png)
+![Scheda della nuova categoria](assets/images/cat-05-scheda-categoria.jpg)
 
-![Scheda della nuova categoria](assets/images/cat-05-scheda-categoria.png)
+Tocca **Descrizione Categoria** e scrivi il nome: nell'esempio **ROSSE** (carni rosse), poi **BIANCHE** (carni bianche) e **VARIE**.
 
-Tocca **Descrizione Categoria** e scrivi il nome con la tastiera. Il relatore ragiona sulle carni e crea **ROSSE** (carni rosse); poi crea **BIANCHE** (carni bianche).
+![Tastiera per la Descrizione Categoria](assets/images/cat-06-descrizione-tastiera.jpg)
 
-![Tastiera per la Descrizione Categoria](assets/images/cat-06-descrizione-tastiera.png)
+![Categoria 1 con descrizione ROSSE](assets/images/cat-07-categoria-rosse.jpg)
 
-![Categoria 1 con descrizione ROSSE](assets/images/cat-07-categoria-rosse.png)
+### 4. Facoltativo: IVA e sconto
 
-### 4. Facoltativo: IVA e sconto di riferimento
+Nella stessa scheda due campi, che di default restano a **0**:
 
-> Nel video: 37:40
+- **Iva %**: l'aliquota IVA di riferimento della categoria.
+- **Sconto %**: collega lo **sconto diretto** alla categoria.
 
-Nella stessa scheda si possono impostare due campi, che nel webinar restano a **0**:
+![Scheda della categoria BIANCHE con Iva e Sconto a 0](assets/images/cat2-02-scheda-categoria-bianche.jpg)
 
-- **Iva %**: l'aliquota IVA di riferimento. Serve perché nella costruzione degli EAN stampabili sotto gli scontrini si può richiamare un EAN collegato ai merceologici, per avere una gestione corretta dell'IVA in vendita. Non interessa la specifica dei singoli articoli, ma raggruppare gli articoli per aliquota, per esempio al 10% o al 4%: lo si fa dando già al merceologico l'IVA di riferimento.
-- **Sconto %**: apre tutto il mondo delle **promozioni** spiegato nel webinar precedente: è possibile collegare al merceologico lo **sconto diretto**.
+### 5. Aggiungi le altre categorie
 
-### 5. Crea la seconda categoria
+Ripeti con **+**, un nuovo codice e la descrizione. Per un codice a due cifre, come **10**, digita il numero sul tastierino.
 
-> Nel video: 38:30
+![Tastierino del codice categoria](assets/images/cat2-03-codice-tastierino.jpg)
 
-Ripeti con **+**, codice **2** e descrizione **BIANCHE** per avere un secondo esempio.
-
-![Tastiera per la descrizione BIANCHE](assets/images/cat-08-seconda-categoria-tastiera.png)
+![Tastiera per la descrizione della categoria PANETTERIA](assets/images/cat2-04-descrizione-tastiera.jpg)
 
 ## Verifica
 
-La lista deve mostrare le due righe: **1 ROSSE** e **2 BIANCHE**, con Iva % e Sconto a 0.
+La lista mostra le categorie create con Iva % e Sconto a 0.
 
-![Lista con le categorie ROSSE e BIANCHE](assets/images/cat-09-lista-finale.png)
+![Lista con le categorie ROSSE, BIANCHE, VARIE e PANETTERIA](assets/images/cat2-05-lista-con-panetteria.jpg)
+
+## Errori comuni
+
+| Problema | Causa probabile | Rimedio |
+|---|---|---|
+| Una scheda della tastiera resta vuota | Gli articoli non sono collegati alla categoria | Nella scheda **Extra** dell'articolo imposta **Gruppo Merceologico** ([Articoli PLU](articoli-plu.md)) |
+| Il collegamento tra scheda e categoria non funziona | Il **Tipo Scheda** non è *Retail - PLU Merceologico* | Controlla la scheda in [Schede Tastiera](schede-tastiera.md) |
 
 !!! tip "Prossimo passo"
-    Con le due categorie create, il relatore passa alla grafica degli articoli per creare il primo PLU: pagina [Articoli PLU](articoli-plu.md).
+    Con le categorie create si passa agli [Articoli PLU](articoli-plu.md).

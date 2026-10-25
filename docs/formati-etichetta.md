@@ -1,6 +1,6 @@
 ---
 title: "Formati Etichetta: layout di scontrino ed etichetta"
-date: "2025-04-10"
+date: "2026-10-25"
 categoria: software Hyperetail
 ---
 
@@ -8,54 +8,63 @@ categoria: software Hyperetail
 
 # Formati Etichetta: layout di scontrino ed etichetta
 
-**Target:** tecnico installatore / rivenditore · **Video:** Custom Academy, webinar *Icona configurazione di base* (10/04/2025), dal minuto 57:37 al 61:45.
+**Target:** tecnico installatore / rivenditore.
 
 ## Obiettivo
 
-Al termine sai preparare i **layout dello scontrino** (intestazione e coda) partendo dai formati pre-impostati, copiarli nel proprio banco con il numero corretto e personalizzarli nell'editor grafico. Sai inoltre come portare nel banco un formato di **etichetta**.
+Preparare i **layout di stampa** della bilancia: copiare un formato predefinito nel proprio banco, personalizzarlo nell'**editor grafico** (ingredienti, tracciabilità, lotto di produzione, testo manuale, logo, tabella nutrizionale) e verificarlo con una prova di stampa.
+
+## Concetti da conoscere
+
+- I formati di default sono tutti nella sezione **FX** (formati fissi): **Lista Formati Pre-Impostati**. L'archivio del banco sembra vuoto perché ogni banco ha i **propri** formati. **Si consiglia sempre di partire da un formato predefinito** copiandolo nel banco e poi personalizzandolo.
+- **Anche lo scontrino è un'etichetta.** Il layout grafico dello scontrino è un'etichetta con formato standardizzato: il formato **50** è la **testa** (intestazione) e il formato **51** è la **coda**. Se ti chiedi dove si attiva il **QR code** o l'**EAN** sotto lo scontrino, la risposta è: nei formati 50 e 51.
+- I formati **50 e 51 sono i layout dello scontrino**; gli altri numeri sono layout di **etichetta**.
+- Dimensioni (larghezza e lunghezza) si determinano **a monte**, nel dettaglio del formato; i campi si dispongono nell'editor.
 
 ## Prerequisiti
 
-- L'[intestazione dello scontrino](intestazioni-operatori-testi.md) è stata creata (nell'archivio **Intestazioni**).
-- Il relatore ha già mostrato in precedenti webinar come creare e modificare le etichette graficamente: qui si concentra su ciò che è importante spiegare.
+- L'[intestazione dello scontrino](intestazioni-operatori-testi.md) è stata creata nell'archivio **Intestazioni**.
+- Se l'etichetta deve stampare ingredienti, tracciabilità o tabella nutrizionale, i dati sono stati preparati: [Box ingredienti e tabelle testi](box-ingredienti-testi.md), [Tracciabilità e lotti](tracciabilita.md), [Tabelle nutrizionali](tabelle-nutrizionali.md).
 
-## Il concetto chiave
-
-!!! warning "Anche lo scontrino è un'etichetta"
-    Il layout grafico dello scontrino è **anch'esso un'etichetta**, con un **formato standardizzato**:
-
-    - il formato **50** è la **testa** (intestazione) dello scontrino;
-    - il formato **51** è la **coda** dello scontrino.
-
-    Chi configura la bilancia può essere mandato fuori pista da questo: la domanda tipica è "come attivo il **QR code** oppure l'**EAN** sotto lo scontrino?". La risposta è **qui**, nei formati 50 e 51.
-
-I formati **50 e 51 fanno riferimento ai layout di stampa dello scontrino**; le etichette sono un'altra cosa (vedi più sotto).
-
-## Passaggi
+## Procedura
 
 ### 1. Apri Formati Etichetta
 
-> Nel video: 57:37
-
 Da **Archivi Dati** scorri la lista in basso e tocca **Formati Etichetta**.
 
-![Archivi Dati: Formati Etichetta](assets/images/fe-01-menu-archivi-dati.png)
+![Archivi Dati: Formati Etichetta](assets/images/fe-01-menu-archivi-dati.jpg)
 
-La lista del banco è vuota. Le colonne sono **Formato**, **Descrizione**, **Larg (mm)** e **Lung (mm)**; il pulsante **+** crea un formato. In basso ci sono due gruppi di icone: due a sinistra (una stampante e un monitor) e cinque a destra.
+La lista del banco mostra le colonne **Formato**, **Descrizione**, **Larg (mm)** e **Lung (mm)**; il pulsante **+** crea un formato. In basso ci sono due gruppi di icone: due a sinistra (una stampante e un monitor, per la prova di stampa e l'anteprima) e cinque a destra.
 
-![Formati Etichetta: lista vuota del banco](assets/images/fe-02-lista-formati-vuota.png)
+![Formati Etichetta: lista vuota del banco](assets/images/fe-02-lista-formati-vuota.jpg)
 
-### 2. Apri la lista dei formati pre-impostati
+### 2. Apri la lista dei formati predefiniti
 
-> Nel video: 57:52
+Tocca la **prima icona del gruppo in basso a destra** (il blocco appunti con la scritta *Fx*): si apre la **Lista Formati Pre-Impostati**.
 
-Tocca la **prima icona del gruppo in basso a destra** (il blocco appunti con la scritta *Fx*): si apre la **Lista Formati Pre-Impostati**, cioè i **formati fissi**, una serie di layout grafici di etichetta già predisposti.
+![Prima icona del gruppo a destra evidenziata, apertura in corso](assets/images/fe-02b-apertura-lista-preimpostati.jpg)
 
-![Prima icona del gruppo a destra evidenziata, apertura in corso](assets/images/fe-02b-apertura-lista-preimpostati.png)
+![Lista Formati Pre-Impostati: formati da 1 a 12](assets/images/fe-03-lista-preimpostati.jpg)
 
-![Lista Formati Pre-Impostati, parte alta: formati da 1 a 12](assets/images/fe-03-lista-preimpostati.png)
+Scorrendo la lista trovi i formati di etichetta con le loro dimensioni (60 mm di larghezza; lunghezze 65, 75 o 93 mm).
 
-Scorrendo la lista in basso si incontrano, tra gli altri, i formati per lo scontrino:
+![Lista Formati Pre-Impostati: formati da 12 a 26](assets/images/fe2-03-lista-preimpostati.jpg)
+
+La descrizione dice che cosa contiene il formato:
+
+| Dicitura | Significato |
+|---|---|
+| **nR. Intestazione** | Numero di righe dedicate all'intestazione (2R, 3R) |
+| **Logo+** | Il formato inizia con un logo |
+| **1 Desc.** / **2 Desc.** | Numero di descrizioni dell'articolo |
+| **nR. Ingredienti** | Numero di righe del box ingredienti (3R, 5R, 7R, 8R, 12R) |
+| **nR. Tracciabilità** / **Tracciab.** | Righe dedicate alla tracciabilità |
+| **Tab. Nut.** | Contiene la tabella nutrizionale |
+| **12R. Inglese** | Ingredienti stampati in inglese (box 2) |
+| **Single Ticket - Ingredienti / Tracciabilità** | Formati per la modalità Single Ticket |
+| **Stampa solo Totale** | Etichetta con i soli totali |
+
+Tra i formati dello scontrino si incontrano, scorrendo:
 
 | Formato | Descrizione | Larg x Lung (mm) |
 |---|---|---|
@@ -66,126 +75,146 @@ Scorrendo la lista in basso si incontrano, tra gli altri, i formati per lo scont
 | 86 | CODA SCONTRINO QrCode | 60,0 x 38,0 |
 | 90 | TRACCIABILITA' Box | 60,0 x 24,0 |
 
-![Lista Formati Pre-Impostati: formati dello scontrino](assets/images/fe-04-lista-preimpostati-scorrimento.png)
+![Lista Formati Pre-Impostati: formati dello scontrino](assets/images/fe-04-lista-preimpostati-scorrimento.jpg)
 
-### 3. Copia l'intestazione con logo nel formato 50
+### 3. Copia un formato nel banco
 
-> Nel video: 58:51
+1. Seleziona il formato nella lista dei predefiniti.
+2. Conferma con la **spunta**: compare il tastierino **Formato Fisso : N => Nuovo Formato ...**.
+3. Digita il numero con cui vuoi salvarlo nel banco (per esempio **41**, oppure **50** per l'intestazione scontrino) e conferma con **Ok**.
 
-1. Nella lista dei pre-impostati seleziona **81 - INTESTAZIONE SCONTRINO + LOGO** (il relatore ha bisogno dell'intestazione con il logo).
-2. Conferma con la **spunta**: compare il tastierino **Formato Fisso : 81 => Nuovo Formato ...**.
-3. Digita **50**, cioè il numero del formato dell'intestazione dello scontrino, e conferma con **Ok**.
+    ![Tastierino di copia: Formato Fisso => Nuovo Formato](assets/images/fe2-04-copia-formato.jpg)
 
-    ![Tastierino: Formato Fisso 81 => Nuovo Formato](assets/images/fe-05-copia-formato-81.png)
+4. Alla richiesta **Eseguo la copia nel Banco Attuale ?** tocca **Sì**.
 
-4. Compare la richiesta **Eseguo la copia nel Banco Attuale ?**. Tocca **Sì**.
+    ![Conferma della copia nel banco attuale](assets/images/fe-06b-conferma-copia.jpg)
 
-    ![Conferma della copia nel banco attuale](assets/images/fe-06b-conferma-copia.png)
+Il formato compare nella lista del banco.
 
-Il formato **50** compare ora nella lista del banco.
+![Lista del banco con il formato 41 copiato](assets/images/fe2-05-lista-con-formato-41.jpg)
 
-![Lista del banco con il formato 50](assets/images/fe-06-lista-formato-50.png)
+## Scontrino: formati 50 (testa) e 51 (coda)
 
-### 4. Copia la coda con EAN13 nel formato 51
+Per l'intestazione con logo copia **81 - INTESTAZIONE SCONTRINO + LOGO** nel formato **50**; per la coda con EAN13 copia **85 - CODA SCONTRINO EAN13** nel formato **51** (per un QR code usa **86 - CODA SCONTRINO QrCode**).
 
-> Nel video: 59:09
+![Copia dell'intestazione con logo nel formato 50](assets/images/fe-05-copia-formato-81.jpg)
 
-Ripeti con la coda: riapri la **Lista Formati Pre-Impostati**, seleziona **85 - CODA SCONTRINO EAN13** (il relatore vuole lavorare con l'EAN13), conferma e digita **51** come nuovo formato.
+![Selezione di CODA SCONTRINO EAN13 nella lista dei predefiniti](assets/images/fe-07-coda-scontrino-ean13.jpg)
 
-![Selezione di CODA SCONTRINO EAN13 nella lista dei pre-impostati](assets/images/fe-07-coda-scontrino-ean13.png)
+![Lista del banco: formati 50 e 51](assets/images/fe-08-lista-50-51.jpg)
 
-!!! tip "QR code al posto dell'EAN13"
-    Se invece sotto lo scontrino serve un QR code, nella stessa lista esiste **86 - CODA SCONTRINO QrCode**. Il relatore usa l'EAN13 nell'esempio.
+!!! warning "Da non confondere"
+    **50 e 51 fanno riferimento ai layout di stampa dello scontrino**; le etichette (ingredienti, tracciabilità, tabella nutrizionale) hanno altri numeri. Per portare nel banco un'etichetta si copia un formato predefinito, per esempio nel formato **1**.
 
-La lista del banco mostra ora i formati **50** e **51**.
+## L'editor grafico
 
-![Lista del banco: formati 50 e 51](assets/images/fe-08-lista-50-51.png)
+Con il formato selezionato apri l'editor: l'etichetta si personalizza **graficamente** oppure con le **coordinate classiche x e y**.
 
-### 5. Personalizza il formato nell'editor grafico
+![Editor grafico a zoom elevato](assets/images/fe-09b-editor-grafico-zoom.jpg)
 
-> Nel video: 59:24
+![Editor grafico dell'etichetta](assets/images/fe2-06-editor-etichetta.jpg)
 
-Con il formato selezionato apri l'editor grafico: rispetto all'etichetta lì si può **personalizzare praticamente tutto**. Il relatore ingrandisce e poi riduce lo zoom per vedere l'intero layout.
-
-![Editor grafico a zoom elevato](assets/images/fe-09b-editor-grafico-zoom.png)
-
-![Editor grafico a zoom ridotto: logo in alto e righe di intestazione](assets/images/fe-09-designer-intestazione.png)
-
-<!-- verificare: nel video l'apertura dell'editor avviene tra 59:31.3 e 59:31.7 con un tocco sulla fila di icone in basso a destra, senza commento; l'icona esatta va confermata sulla bilancia -->
+<!-- verificare: l'icona esatta che apre l'editor (nel gruppo di cinque icone a destra della lista) va confermata sulla bilancia -->
 
 !!! warning "Da verificare"
-    Il relatore apre l'editor con un solo tocco sulle icone in basso a destra della lista e non indica quale. Controlla sulla bilancia l'icona dell'editor grafico.
+    L'apertura dell'editor avviene con un tocco sulle icone in basso a destra della lista del banco: controlla sulla bilancia quale icona corrisponde all'editor grafico.
 
-**Obiettivo dell'esempio**: avere il **logo in alto** e l'**intestazione sotto**. Servono due modifiche.
+### Dimensioni dell'etichetta
 
-**a) Aumenta la lunghezza dell'etichetta.** Torna alla lista, seleziona il formato e tocca la **lente**: si apre il dettaglio **Lista Formati** con **ID Formato** (50), **Descrizione Formato**, **Larghezza Etichetta (mm)** (60,0) e **Lunghezza Etichetta (mm)** (15,0).
+Dalla lista, seleziona il formato e tocca la **lente**: si apre il dettaglio **Lista Formati** con **ID Formato**, **Descrizione Formato**, **Larghezza Etichetta (mm)** e **Lunghezza Etichetta (mm)**. Tocca la **matita** per modificare. Se ti serve più spazio sopra il logo, per esempio, aumenta la lunghezza (nell'esempio da 15,0 a **35**).
 
-![Dettaglio del formato 50: larghezza e lunghezza](assets/images/fe-10b-dettaglio-formato-50.png)
+![Dettaglio del formato: larghezza e lunghezza](assets/images/fe2-22-dettaglio-formato-10.jpg)
 
-Tocca la **matita**, poi il campo **Lunghezza Etichetta (mm)** e portala da 15,0 a **35**: serve per avere spazio sopra.
+![Tastierino Lunghezza Etichetta (mm)](assets/images/fe-10-lunghezza-etichetta.jpg)
 
-![Tastierino Lunghezza Etichetta (mm)](assets/images/fe-10-lunghezza-etichetta.png)
+### Proprietà di un oggetto
 
-**b) Adatta il logo.** Rientra nello scontrino (editor grafico) e tocca l'oggetto del logo: il pannello a sinistra mostra le sue proprietà (**Base**: Allineamento, Altezza (mm), Descrizione, Direzione Campo, Id Tipo, Lunghezza (mm), Num. Campo, Opzioni Stampa, Posizione x (mm), Posizione y (mm), Tipo Campo; **Estese**: Anteprima).
+Toccando un oggetto nell'editor il pannello a sinistra ne mostra le **proprietà**. Il campo **Origine Dato** dice a quale **dato del database** punta l'oggetto.
 
-![Editor con l'oggetto logo selezionato in alto](assets/images/fe-11-designer-logo.png)
+| Gruppo | Proprietà |
+|---|---|
+| **Base** | Altezza (mm), Descrizione, Direzione Campo, Lunghezza (mm), Num. Campo, Opzioni Stampa, Posizione x (mm), Posizione y (mm), Tipo Campo |
+| **Estese** | Allineamento, Anteprima, **Id Testo**, **Id Tipo**, N. Riga, Numero Caratteri, **Origine Dato**, Primo Carattere, Spessore (mm) |
+| **Font** | Cancellato, Corsivo, Dimensione (pt), Font, Grassetto, Proporzione (%), Sottolineato |
 
-![Proprietà dell'oggetto: Lunghezza (mm) 22, Altezza (mm) 13,5](assets/images/fe-12-proprieta-oggetto.png)
+![Proprietà di un oggetto: lunghezza, altezza e posizione](assets/images/fe-12-proprieta-oggetto.jpg)
 
-Tocca **Lunghezza (mm)**: il tastierino **Lunghezza (mm)-Larghezza dell'oggetto in pixel** mostra il valore attuale (**22**). Il relatore lo porta a **60**, così il logo occupa tutta la larghezza.
+Per modificare una misura tocca la proprietà (per esempio **Lunghezza (mm)**) e usa il tastierino. Nell'esempio la lunghezza del logo passa da 22 a **60**, così occupa tutta la larghezza.
 
-![Tastierino Lunghezza (mm) dell'oggetto](assets/images/fe-13-lunghezza-oggetto.png)
+![Tastierino della lunghezza dell'oggetto](assets/images/fe-13-lunghezza-oggetto.jpg)
 
-Lo stesso vale per l'**altezza**: tocca **Altezza (mm)** e inserisci il nuovo valore.
-
-![Tastierino Altezza (mm) dell'oggetto](assets/images/fe-14-altezza-oggetto.png)
-
-![Il logo adattato occupa tutta la larghezza](assets/images/fe-15-designer-dopo.png)
+![Il logo adattato occupa tutta la larghezza](assets/images/fe-15-designer-dopo.jpg)
 
 !!! danger "Salva le modifiche"
-    Per salvare tocca il **dischetto** in alto a destra nell'editor. Se invece tocchi la **freccia indietro** si **perdono tutte le modifiche** fatte.
+    Per salvare tocca il **dischetto** in alto a destra nell'editor. Se tocchi la **freccia indietro** si **perdono tutte le modifiche** fatte.
 
-La lista del banco mostra ora il formato 50 con lunghezza **35,0**.
+### Ingredienti in più lingue
 
-![Lista del banco: formato 50 con lunghezza 35,0](assets/images/fe-16-lista-50-modificato.png)
+Un oggetto ingredienti ha **Id Tipo** *(Mr) Multi_Riga* ed **Origine Dato** *Testo PLU*. Il campo **Id Testo** indica a quale **box** dell'articolo fa riferimento: nell'esempio l'etichetta con gli ingredienti in inglese punta al **box 2**.
 
-### 6. Stessa procedura per la coda
+![Proprietà dell'oggetto ingredienti: Origine Dato Testo PLU, Id Testo 2](assets/images/fe2-07-proprieta-testo-ingredienti.jpg)
 
-> Nel video: 61:01
+![Modifica dell'Id Testo: identificativo del link associato](assets/images/fe2-08-id-testo.jpg)
 
-Lo stesso procedimento vale per la **coda** (formato 51): nell'editor si vede il layout con le righe di testo e il **codice a barre EAN13**.
+Al posto del testo del box puoi puntare al **puntatore** a una **tabella di testi** (quello che serve, per esempio, in una panetteria che ripete sempre gli stessi ingredienti): vedi [Box ingredienti e tabelle testi](box-ingredienti-testi.md).
 
-![Editor grafico della coda con il codice a barre](assets/images/fe-17-designer-coda.png)
+### Tracciabilità
 
-Il relatore riassume: sono "le cose basiche" che permettono una **prima installazione** della bilancia; quando la bilancia sarà disponibile si potrà personalizzare questa parte.
+Un formato con la tracciabilità ha un oggetto con **Origine Dato** *Tracciabilità Allineata*: un campo **multiriga** con i dati della tracciabilità, allineati.
 
-### 7. Portare nel banco un formato etichetta
+![Proprietà del campo tracciabilità: Origine Dato Tracciabilità Allineata](assets/images/fe2-12-proprieta-tracciabilita.jpg)
 
-> Nel video: 61:17
+Per etichette più piccole (per esempio **60x75**) il campo completo potrebbe occupare troppo spazio: esiste una modalità alternativa in cui la tracciabilità è **divisa in due colonne**. A sinistra le **definizioni** (le "domande"), a destra le **informazioni del lotto**: serve quando devi sfruttare ogni millimetro.
 
-Le **etichette** funzionano in modo diverso dallo scontrino. Si prende un'etichetta dalla lista dei pre-impostati, la si riporta nel proprio banco e, come dice il relatore, **a questo punto deve essere il formato numero uno**.
+![Editor: tracciabilità in due colonne](assets/images/fe2-16-editor-tracciabilita-doppia.jpg)
 
-Nell'esempio si seleziona il formato **4** (*2R. Intestazione - 2 Desc. - 5R. Ingredienti*, 60,0 x 65,0)...
+![Proprietà del campo: Origine Dato Definizione Lotto](assets/images/fe2-17-proprieta-definizione-lotto.jpg)
 
-![Lista Formati Pre-Impostati con il formato 4 selezionato](assets/images/fe-18-formato-4.png)
+### Lotto di produzione e testo manuale
 
-...lo si copia con il tastierino **Formato Fisso : 4 => Nuovo Formato ...** digitando **1**...
+Nei formati che prevedono il **lotto di produzione** c'è un oggetto con **testo fisso** (per esempio "LOTTO:") e un oggetto dato con **Origine Dato** *Lotto Produzione*: è il valore che si scrive sulla bilancia in fase di etichettatura. Si può agganciare anche al campo che stampa in automatico il **lotto giuliano** (progressivo legato all'anno). Nelle stesse etichette si può aggiungere un **testo libero**, il **testo manuale** (per esempio il nome del cliente).
 
-![Tastierino: Formato Fisso 4 => Nuovo Formato](assets/images/fe-19-copia-formato-4.png)
+![Editor: lotto di produzione e testo](assets/images/fe2-18-editor-lotto-produzione.jpg)
 
-...e il formato **1** compare nella lista del banco, accanto ai formati 50 e 51.
+![Proprietà del campo: Origine Dato Lotto Produzione](assets/images/fe2-19-proprieta-lotto-produzione.jpg)
 
-![Lista del banco: formati 1, 50 e 51](assets/images/fe-20-lista-formato-1.png)
+### Logo e immagini
 
-Anche qui si entra nell'**editor grafico** del layout dell'etichetta e lo si personalizza con i campi che servono.
+Un oggetto immagine può puntare all'**immagine collegata all'intestazione** dello scontrino, oppure all'**immagine del PLU**: il logo/QR code che si è agganciato all'articolo (vedi [Articoli PLU](articoli-plu.md), scheda **Immagini**).
 
-![Editor grafico del layout dell'etichetta](assets/images/fe-21-designer-etichetta.png)
+![Proprietà dell'oggetto immagine: tipo Intestazione (Testa)](assets/images/fe2-14-proprieta-immagine-testata.jpg)
 
-<!-- verificare: la trascrizione cita "formato per esempio 65"; sullo schermo il formato copiato e' il 4, che ha lunghezza 65,0 mm -->
+### Tabella nutrizionale
+
+Alcuni formati (quelli con **Tab. Nut.**) contengono la tabella nutrizionale, anche in versione compatta e separata dagli altri campi. Il contenuto viene dall'articolo ([Tabelle nutrizionali](tabelle-nutrizionali.md)).
+
+### Selezione multipla
+
+Per spostare molti campi a destra, a sinistra, in basso, puoi **selezionare più campi contemporaneamente** (con il mouse) e muoverli insieme.
+
+![Editor: selezione multipla dei campi](assets/images/fe2-20-editor-selezione-multipla.jpg)
+
+### Prova di stampa e anteprima
+
+Dalla lista dei formati puoi **provare l'etichetta in stampa** (icona in basso a sinistra): la bilancia stampa l'etichetta con **campi fittizi**. Puoi anche vederla a video con campi fittizi, oppure in **anteprima** con i dati letti dal database.
+
+![Anteprima dell'etichetta con i dati del database](assets/images/fe2-23-anteprima-etichetta.jpg)
 
 ## Verifica
 
-La lista **Formati Etichetta** del banco contiene **1** (etichetta), **50** (INTESTAZIONE SCONTRINO + LOGO, lunghezza 35,0) e **51** (CODA SCONTRINO EAN13). Ricorda: **50 e 51 sono i layout dello scontrino**, non delle etichette.
+1. Copia e personalizza il formato.
+2. Fai una prova di stampa e controlla ingredienti, tracciabilità, lotto, logo e tabella nutrizionale.
+3. Assegna il formato: come formato di default in **Opzioni Etichetta** ([Configurazione Operativa](configurazione-operativa.md)) oppure nella scheda **Stampa** dell'articolo ([Articoli PLU](articoli-plu.md)).
+
+## Errori comuni
+
+| Problema | Causa probabile | Rimedio |
+|---|---|---|
+| L'archivio formati del banco è vuoto | I formati predefiniti non sono ancora stati copiati | Apri la **Lista Formati Pre-Impostati** e copia un formato nel banco |
+| L'etichetta è più corta del previsto | Lunghezza non aggiornata | Modifica la lunghezza nel dettaglio del formato |
+| Gli ingredienti in inglese non compaiono | **Id Testo** punta al box 1 | Imposta **Id Testo** sul box 2 |
+| Le modifiche nell'editor sono andate perse | È stata usata la freccia indietro | Salva sempre con il **dischetto** |
+| L'etichetta non mostra la tracciabilità | Formato senza campo di tracciabilità | Scegli un formato "Tracciab." o aggiungi il campo |
 
 !!! tip "Prossimo passo"
-    L'ultima area mostrata è la costruzione dei codici a barre: pagina [Formati Barcode](formati-barcode.md).
+    Per la costruzione dei codici a barre: [Formati Barcode](formati-barcode.md).

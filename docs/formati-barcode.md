@@ -1,6 +1,6 @@
 ---
 title: "Formati Barcode: costruire EAN13, CODE 128 e QR Code"
-date: "2025-04-10"
+date: "2026-10-25"
 categoria: software Hyperetail
 ---
 
@@ -8,67 +8,65 @@ categoria: software Hyperetail
 
 # Formati Barcode: costruire EAN13, CODE 128 e QR Code
 
-**Target:** tecnico installatore / rivenditore · **Video:** Custom Academy, webinar *Icona configurazione di base* (10/04/2025), dal minuto 61:42 al 64:20.
+**Target:** tecnico installatore / rivenditore.
 
 ## Obiettivo
 
-Al termine sai dove si trovano i formati dei codici a barre, come copiare e rinominare un formato EAN13 e come cambiare la composizione dei suoi campi, per esempio per ottenere un **EAN a peso**. Sai inoltre che esistono i formati **CODE 128**, **GS1-128** e **QR Code** personalizzabili.
+Sapere dove si trovano i formati dei codici a barre, copiare e rinominare un formato EAN13, cambiare la composizione dei suoi campi (per esempio per ottenere un **EAN a peso**) e conoscere i formati **CODE 128**, **GS1-128** e **QR Code**, anch'essi personalizzabili.
 
 ## Prerequisiti
 
-- Hai visto come i barcode di default vengono scelti nella [Configurazione Operativa](configurazione-operativa.md): campi **Barcode => Vendita** (2) e **Barcode => Multipesata** (6).
+- I barcode di default sono scelti nella [Configurazione Operativa](configurazione-operativa.md): campi **Barcode => Vendita** (valore 2) e **Barcode => Multipesata** (valore 6).
+- Un barcode si può anche assegnare al **singolo articolo**: vedi [Articoli PLU](articoli-plu.md), scheda **Barcode**.
+
+## Come ragiona la bilancia
+
+I barcode sono archiviati come **formati numerati**. Ogni formato è l'elenco dei **campi** che compongono il codice, nell'ordine in cui vengono stampati. I formati forniti di default si possono usare così come sono oppure **copiare e adattare**: la costruzione del codice è sempre personalizzabile.
 
 ## Passaggi
 
 ### 1. Apri Formati Barcode
 
-> Nel video: 61:42
-
 Dal menu **Setup Bilancia** tocca **Formati Barcode**. Le voci sono **Formati Barcode EAN13**, **Formati Barcode CODE 128**, **Formati QRCODE**, **Formati Barcode GS1-128** e **Composizione QRCode Data Collect**.
 
-![Menu Formati Barcode](assets/images/fb-01-menu-formati-barcode.png)
+![Menu Formati Barcode](assets/images/fb-01-menu-formati-barcode.jpg)
 
-### 2. Guarda i formati EAN13 di default
-
-> Nel video: 61:46
+### 2. Consulta i formati EAN13 di default
 
 Tocca **Formati Barcode EAN13**. La lista ha le colonne **ID Barcode** e **Descrizione**.
 
-![Lista dei formati EAN13](assets/images/fb-02-lista-ean13.png)
+![Lista dei formati EAN13](assets/images/fb-02-lista-ean13.jpg)
 
-Il relatore ricorda che questa "leggenda" di sigle, per esempio *L BBBBBB IIII K*, riprende la **storia dell'archivio Italiana Macchi**. Le sigle sono **solo un nome**: la costruzione del codice a barre è sempre personalizzabile.
+!!! note "Le sigle della descrizione sono solo un nome"
+    Le descrizioni di default (per esempio *L BBBBBB IIII K*) ricalcano la storia dell'archivio delle bilance Italiana Macchi e servono a riconoscere il formato a colpo d'occhio. Sono **solo un nome**: non c'è l'obbligo di rispettarle e il contenuto reale del codice dipende dai campi del formato.
 
-### 3. Copia un formato e dagli un nome tuo
+### 3. Copia un formato e dagli un nome
 
-> Nel video: 62:01
+Per non modificare i formati di default, parti da una copia.
 
-Il relatore prende il formato **2** e lo copia nel formato **11**.
+1. Seleziona il formato da copiare, per esempio il **2**.
 
-1. Seleziona il formato **2** nella lista.
+    ![Formato 2 selezionato nella lista](assets/images/fb-03-selezione-formato-2.jpg)
 
-    ![Formato 2 selezionato nella lista](assets/images/fb-03-selezione-formato-2.png)
+2. Copialo in un nuovo numero libero, per esempio **11**, con l'icona di copia in basso a destra: nella lista compare la nuova riga **11**, ancora con la descrizione del formato 2.
 
-2. Copialo nel formato **11** con l'icona di copia in basso a destra: nella lista compare la nuova riga **11**, ancora con la stessa descrizione del formato 2.
+    ![Formato 11 copiato dal formato 2](assets/images/fb-03b-formato-11-copiato.jpg)
 
-    ![Formato 11 copiato dal formato 2](assets/images/fb-03b-formato-11-copiato.png)
+3. Apri il formato **11** e tocca **Descrizione**: scrivi il nome che preferisci (nell'esempio **MIO**).
 
-3. Apri il formato **11** e tocca **Descrizione**: scrivi il nome che vuoi. Il relatore ci scrive **MIO**: non c'è l'obbligo di mettere le sigle di default.
+    ![Tastiera per la Descrizione del barcode](assets/images/fb-04-descrizione-tastiera.jpg)
 
-    ![Tastiera per la Descrizione del barcode](assets/images/fb-04-descrizione-tastiera.png)
+    ![Formato 11 con descrizione MIO](assets/images/fb-05-formato-11-mio.jpg)
 
-    ![Formato 11 con descrizione MIO](assets/images/fb-05-formato-11-mio.png)
+La lista contiene ora il formato **11 MIO**.
 
-La lista ora contiene il formato **11 MIO**.
+![Lista con il formato 11 MIO](assets/images/fb-06-lista-con-11.jpg)
 
-![Lista con il formato 11 MIO](assets/images/fb-06-lista-con-11.png)
+### 4. Leggi la composizione del barcode
 
-### 4. Apri la composizione del barcode
+Apri il formato **11**: compare l'elenco dei **campi** che formano il codice, con le colonne **Posizione**, **Descrizione** e **Tipo**.
 
-> Nel video: 62:24
-
-Apri il formato **11**: si vede la sua composizione, cioè l'elenco dei **campi** che formano il codice, con le colonne **Posizione**, **Descrizione** e **Tipo**.
-
-![Campi del formato 11: codice iniziale, codice PLU, importo, check digit](assets/images/fb-07-campi-barcode.png)
+![Campi del formato 11: codice iniziale, codice PLU, importo, check digit](assets/images/fb-07-campi-barcode.jpg)
 
 | Posizione | Descrizione | Tipo |
 |---|---|---|
@@ -77,61 +75,61 @@ Apri il formato **11**: si vede la sua composizione, cioè l'elenco dei **campi*
 | 3 | importo etichetta 5 digit | Dati Variabili |
 | 4 | Checkdigit | Check Digit Finale |
 
+Il formato qui descritto è un EAN13 a **importo**: 1 cifra fissa, 6 cifre di codice PLU, 5 cifre di importo e 1 cifra di controllo, per un totale di **13 cifre**.
+
 Ogni campo si apre in **Composizione Barcode (EAN13)**, sezione **Campo Barcode**:
 
-- **Campo 1, codice iniziale.** Il codice iniziale è il **2**: è un **codice fisso**. Nella scheda il **Tipo Campo** è *Dati Fissi* e il **Testo Fisso / Caratteri Speciali** vale **2**.
+- **Campo 1, codice iniziale.** È un **codice fisso**: il **Tipo Campo** è *Dati Fissi* e il **Testo Fisso / Caratteri Speciali** vale **2**.
 
-    ![Campo 1: Codice iniziale, Dati Fissi, testo fisso 2](assets/images/fb-08-campo-codice-iniziale.png)
+    ![Campo 1: Codice iniziale, Dati Fissi, testo fisso 2](assets/images/fb-08-campo-codice-iniziale.jpg)
 
-- **Campo 2, codice PLU.** Si può decidere che sia un **dato variabile**. Si regolano la lunghezza del campo (**Numero Caratteri**, qui 6), il **Primo Carattere** (qui 12) e il campo d'origine, **Origine Dato Variabile**.
+- **Campo 2, codice PLU.** Il **Tipo Campo** è *Dati Variabili*. Si regolano il **Numero Caratteri** (qui 6), il **Primo Carattere** (qui 12; l'etichetta del campo ricorda che i valori numerici si allineano a destra e quelli alfanumerici a sinistra) e l'**Origine Dato Variabile**, cioè da dove la bilancia prende il valore.
 
-    ![Campo 2: Codice Plu, Dati Variabili, primo carattere 12, 6 caratteri](assets/images/fb-09-campo-codice-plu.png)
+    ![Campo 2: Codice Plu, Dati Variabili, primo carattere 12, 6 caratteri](assets/images/fb-09-campo-codice-plu.jpg)
 
-- **Campo 4, check digit.** È necessario ed è l'ultimo campo (*Check Digit Finale*).
+- **Campo 4, check digit.** È necessario ed è sempre l'ultimo campo (*Check Digit Finale*).
 
-![Lista dei campi con il codice PLU selezionato](assets/images/fb-10-lista-campi.png)
+![Lista dei campi con il codice PLU selezionato](assets/images/fb-10-lista-campi.jpg)
 
 ### 5. Cambia l'origine dei dati: l'EAN a peso
 
-> Nel video: 62:46
+Il campo 3 contiene l'**importo**: la sua **Origine Dato Variabile** è *Importo Transazione*, con **Primo Carattere** 5 e **Numero Caratteri** 5. Il menu a tendina mostra le origini disponibili:
 
-Il campo 3 contiene l'**importo**: nel campo **Origine Dato Variabile** il valore è **Importo Transazione**, con **Primo Carattere** 5 e **Numero Caratteri** 5. Aprendo il menu a tendina si scelgono le possibili origini del dato:
+![Menu a tendina Origine Dato Variabile](assets/images/fb-11-origine-dato-tendina.jpg)
 
-![Menu a tendina Origine Dato Variabile](assets/images/fb-11-origine-dato-tendina.png)
-
-Le voci elencate sono **Importo Transazione**, **Barcode PLU (Num)**, **Codice PLU**, **Numero Banco**, **Numero Progressivo**, **Peso**, **Codice Intestazione**, **N. Transazione**, **Numero Cliente**, **Gruppo Merceologico** e **Aliquota IVA**, più altre voci che si raggiungono scorrendo.
+**Importo Transazione**, **Barcode PLU (Num)**, **Codice PLU**, **Numero Banco**, **Numero Progressivo**, **Peso**, **Codice Intestazione**, **N. Transazione**, **Numero Cliente**, **Gruppo Merceologico**, **Aliquota IVA** e altre voci che si raggiungono scorrendo l'elenco.
 
 !!! tip "EAN a peso"
-    Se questo campo non deve riportare l'importo della transazione ma il **peso** della transazione (voce **Peso**), si ottiene un **EAN a peso**. Il relatore invita a personalizzare qui il codice secondo le proprie esigenze.
+    Se questo campo deve riportare non l'importo ma il **peso** della transazione, scegli l'origine **Peso**: il barcode diventa un **EAN a peso**. Con lo stesso criterio si può costruire un codice che porti banco, progressivo, numero cliente, gruppo merceologico o aliquota IVA.
 
 ### 6. CODE 128, GS1-128 e QR Code
 
-> Nel video: 63:04
+Oltre all'EAN13 sono disponibili, e personalizzabili, i formati **CODE 128** e **GS1-128** e i formati del **QR Code**. In **Composizione QRCode Data Collect** sono già presenti due formati:
 
-Il relatore ricorda che sono stati introdotti da poco i formati **CODE 128** e i **formati personalizzabili del QR Code**. Nel menu c'è anche **Formati Barcode GS1-128**, che non viene commentata. In **Composizione QRCode Data Collect** si trovano già due formati di default:
-
-| ID Formato | Descrizione | Note del relatore |
+| ID Formato | Descrizione | Note |
 |---|---|---|
-| 1 | QrCode Classic ECR | È il classico, usato nel **90% dei casi** |
+| 1 | QrCode Classic ECR | È il formato classico, usato nel **90% dei casi** |
 | 2 | QrCode Bz | Emulazione **Bizerba**: prevede un'intestazione e un fine tracciato |
 
-![Composizione QRCode Data Collect: formati di default](assets/images/fb-12-formati-qrcode.png)
+![Composizione QRCode Data Collect: formati di default](assets/images/fb-12-formati-qrcode.jpg)
 
-Anche per il QR Code si può **copiare** il formato e **personalizzarlo**.
+Anche per il QR Code puoi **copiare** un formato e **personalizzarlo**.
 
-<!-- verificare: la trascrizione riporta "CR usato nel 90% dei casi" e "emulazione Bizzerba"; interpretati rispettivamente come "Classic ECR" (visibile a schermo) e Bizerba -->
-
-## Chiusura del webinar
-
-> Nel video: 63:43
-
-Visto l'orario, il relatore si ferma qui e rimanda il proseguimento della configurazione al **prossimo webinar**. Spera di aver fornito le basi necessarie per iniziare a configurare il prodotto. Torna infine in vendita e fa notare come i nomi degli operatori (**SALVATORE** e **ANN**) compaiano sui tasti: la bilancia **si adatta da sola alle dimensioni** dei testi, come si è detto per la parte grafica e per i tasti.
-
-![Schermata di vendita finale con le schede e gli operatori sui tasti](assets/images/fin-01-ritorno-in-vendita.png)
+<!-- verificare: "QrCode Bz" interpretato come emulazione Bizerba (la descrizione a schermo e' abbreviata) -->
 
 ## Verifica
 
-Nella lista dei formati EAN13 compare il formato **11 MIO**, con i quattro campi (codice iniziale, codice PLU, importo, check digit).
+Nella lista dei formati EAN13 è presente il formato **11 MIO**, con i quattro campi (codice iniziale, codice PLU, importo, check digit). Per usarlo come barcode di vendita imposta il suo numero in **Configurazione Operativa** oppure nella scheda **Barcode** del singolo articolo.
 
-!!! tip "Per proseguire"
-    Il relatore rimanda ai **webinar successivi** il proseguimento della configurazione e gli argomenti citati ma non affrontati: tracciabilità e lotti, tabelle nutrizionali, promozioni e applicativi collegati. Torna alla [pagina iniziale](index.md) per rivedere il percorso.
+## Errori comuni
+
+| Problema | Causa probabile | Rimedio |
+|---|---|---|
+| Il barcode stampato non è quello atteso | Il formato è assegnato in un punto diverso da quello modificato (configurazione generale o scheda **Barcode** dell'articolo) | Controlla dove è impostato il numero del formato: la scheda dell'articolo prevale sulla configurazione generale |
+| Si è modificato un formato di default | Il formato non è stato copiato prima | Crea una copia in un numero libero e lavora sulla copia |
+
+!!! note "Controllo sulla lunghezza"
+    Un EAN13 è composto da 13 cifre: dopo ogni modifica verifica **Primo Carattere** e **Numero Caratteri** di ciascun campo, in modo che il totale resti 13.
+
+!!! tip "Prossimi argomenti"
+    Per costruire un'etichetta che stampi il barcode vedi [Formati Etichetta](formati-etichetta.md).

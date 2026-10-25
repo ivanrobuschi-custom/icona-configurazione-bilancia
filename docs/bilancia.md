@@ -1,6 +1,6 @@
 ---
 title: "Bilancia: identità, banco attivo e parametri di base"
-date: "2025-04-10"
+date: "2026-10-25"
 categoria: software Hyperetail
 ---
 
@@ -8,101 +8,103 @@ categoria: software Hyperetail
 
 # Bilancia: identità, banco attivo e parametri di base
 
-**Target:** tecnico installatore / rivenditore · **Video:** Custom Academy, webinar *Icona configurazione di base* (10/04/2025), dal minuto 17:25 al 23:00.
+**Target:** tecnico installatore / rivenditore.
 
 ## Obiettivo
 
-Al termine sai dichiarare a quale banco appartiene la bilancia e quale banco è attivo, scegliere il tipo di configurazione (per banco, per bilancia o globale) e conosci le sezioni della pagina **Bilancia**: quali toccare e quali lasciare di default.
+Dichiarare a quale banco appartiene la bilancia e quale banco è attivo, scegliere il **tipo di configurazione** (per banco, per bilancia o globale) e conoscere le sezioni della pagina **Bilancia**: quali toccare e quali lasciare di default.
 
 ## Prerequisiti
 
-- I banchi sono stati creati: vedi [Lista Banchi](lista-banchi.md).
+- I banchi sono stati creati: [Lista Banchi](lista-banchi.md).
 - I [Collegamenti](collegamenti.md) sono stati controllati.
 
-## Passaggi
+## Procedura
 
 ### 1. Apri la pagina Bilancia
 
-> Nel video: 17:25
+Dopo aver creato i banchi si dichiara che cos'è **questa** bilancia. Dal menu **Setup Bilancia**, sezione **Configurazione**, tocca **Bilancia**.
 
-Dopo aver creato i banchi, si dichiara che cos'è **questa** bilancia. Dal menu **Setup Bilancia**, sezione **Configurazione**, tocca **Bilancia**.
-
-![Voce Bilancia nel menu Setup Bilancia](assets/images/bil-01-voce-bilancia.png)
+![Voce Bilancia nel menu Setup Bilancia](assets/images/bil-01-voce-bilancia.jpg)
 
 ### 2. ID Bilancia: banco, numero e nome
 
-> Nel video: 17:29
-
 La prima sezione è **ID Bilancia**. I campi sono **Numero Banco**, **Numero Bilancia**, **Banco Attivo**, **Nome Bilancia**, **Tipo Configurazione** e **Configurazione Display**.
 
-![ID Bilancia con Numero Banco 1](assets/images/bil-02-id-bilancia-numero-banco-1.png)
+![ID Bilancia con Numero Banco 1](assets/images/bil-02-id-bilancia-numero-banco-1.jpg)
 
-- **Numero Banco**: dichiara il banco a cui appartiene la bilancia. Tocca la lente accanto al valore per aprire la lista dei banchi e scegline uno.
+- **Numero Banco**: il banco di riferimento della bilancia. Tocca la lente accanto al valore per aprire la lista dei banchi.
 
-    ![Lista dei banchi per scegliere il Numero Banco](assets/images/bil-03-scelta-banco.png)
+    ![Lista dei banchi per scegliere il Numero Banco](assets/images/bil-03-scelta-banco.jpg)
 
-- **Banco Attivo**: è il banco attivo in questo momento sulla bilancia. Può essere diverso dal banco di riferimento: per esempio il banco di riferimento è l'1 ma si attiva momentaneamente il 2. Il relatore riporta infine tutto sul banco 2 per non riavviare la bilancia.
-- **Numero Bilancia**: partendo dalla bilancia principale, che nel caso del relatore è il server, si dichiara **1**; ma può anche essere, per esempio, la **24ª** bilancia del banco. Non indica il funzionamento della bilancia: sono punti di accesso al database, quindi il numero della bilancia non incide sul ruolo della bilancia.
-- **Nome Bilancia**: nel webinar è **ICONA**.
+- **Banco Attivo**: il banco attivo in questo momento. Può essere diverso dal banco di riferimento: per esempio si può tenere come riferimento il banco 1 e attivare momentaneamente il 2. Riporta il banco al valore voluto prima di uscire, per non dover riavviare la bilancia.
+- **Numero Bilancia**: partendo dalla bilancia principale (il server) si dichiara **1**; ma può essere anche la 24ª bilancia del banco. In un sistema di bilance collegate più bilance possono lavorare sullo stesso banco e **condividere lo stesso database**. Il numero non incide sul funzionamento: sono tutti punti di accesso al database.
+- **Nome Bilancia**: nell'esempio **ICONA**.
 
-![ID Bilancia con banco 2 attivo, numero bilancia 24](assets/images/bil-04-id-bilancia-banco-2.png)
+![ID Bilancia con banco 2 attivo, numero bilancia 24](assets/images/bil-04-id-bilancia-banco-2.jpg)
 
 ### 3. Scegli il Tipo Configurazione
 
-> Nel video: 18:29
+Il menu a tendina **Tipo Configurazione** propone **Globale**, **per Banco** e **per Bilancia**.
 
-Qui sta la parte importante: le configurazioni. Il menu a tendina **Tipo Configurazione** propone **Globale**, **per Banco** e **per Bilancia**.
+![Tipo Configurazione: Globale, per Banco, per Bilancia](assets/images/bil-05-tipo-configurazione.jpg)
 
-![Tipo Configurazione: Globale, per Banco, per Bilancia](assets/images/bil-05-tipo-configurazione.png)
-
-| Valore | Quando usarlo, secondo il relatore |
+| Valore | Quando usarlo |
 |---|---|
-| **per Banco** | È il valore di default, e il relatore consiglia di **lasciarlo così**. Le impostazioni di lavoro si determinano per la tipologia di banco in cui si sta operando: salumeria, macelleria, frutta e verdura (che magari dovranno attivare il Self Service). |
-| **Globale** | Tutte le programmazioni successive (dalle configurazioni della tastiera ai formati etichetta) sono **condivise da tutti i banchi** presenti sulla bilancia. |
-| **per Bilancia** | Serve solo quando ci sono due o tre bilance connesse in rete sullo stesso banco (per esempio la salumeria) e una di queste deve lavorare diversamente, per esempio in etichettatura con un layout grafico diverso da quello del banco. |
+| **per Banco** | È il valore di default e va **lasciato così**. Le impostazioni valgono per tutto il banco: i settaggi fatti su una bilancia vengono riportati su tutte le altre collegate alla stessa rete e allo stesso banco. Adatto a salumeria, macelleria, frutta e verdura (che magari dovranno attivare il Self Service) |
+| **Globale** | Tutte le programmazioni successive (dalle configurazioni tastiera ai formati etichetta) sono **condivise da tutti i banchi** presenti sulla bilancia |
+| **per Bilancia** | Serve solo quando due o tre bilance sono collegate in rete sullo stesso banco e una di esse deve lavorare diversamente, per esempio in etichettatura con un layout grafico diverso da quello del banco |
 
 !!! note "Configurazione Display"
-    Il campo **Configurazione Display** indica i display usati: nel webinar è **2 Display**. Il relatore ricorda che per il Self Service si usa un solo display, perché il secondo non esiste.
-
-<!-- verificare: la trascrizione dice "da non confondere con il servizio rapido che ha necessità dei due display"; il termine esatto va controllato sul video (19:46-19:58) -->
+    Indica i display usati: nell'esempio **2 Display**. Per il Self Service si usa un solo display, perché il secondo non esiste; non va confuso con il servizio rapido, che richiede i due display.<!-- verificare: la distinzione tra Self Service e "servizio rapido" va controllata sul prodotto -->
 
 ### 4. Sezioni a sinistra: legate al banco selezionato
 
-> Nel video: 20:03
+Sulla sinistra si apre una serie di sezioni collegate al **banco selezionato**. Alcune sono da lasciare di default, altre vanno guardate.
 
-Sulla sinistra si apre una serie di configurazioni che si collegano al **banco selezionato**. Alcune sono da lasciare di default, altre vanno guardate.
+**User Interface.** Di norma **non si tocca**: indica l'ambiente di lavoro, cioè la cartella dove la bilancia registra le sue configurazioni e gli eseguibili di riferimento. Campi: **Cartella di Lavoro** `C:\Scale_UI`, **Nome Eseguibile** `FrontEnd.exe`, **Tipo Icone**.
 
-**User Interface** (20:13). Sono configurazioni che di norma **non si toccano**: indicano l'ambiente di lavoro, cioè la cartella dove la bilancia registra le sue configurazioni e gli eseguibili di riferimento. Nella schermata: **Cartella di Lavoro** `C:\Scale_UI`, **Nome Eseguibile** `FrontEnd.exe`, **Tipo Icone** *Icone bianche*.
+![User Interface: cartella di lavoro, eseguibile e tipo di icone](assets/images/bil-06-user-interface.jpg)
 
-![User Interface: cartella di lavoro, eseguibile e tipo di icone](assets/images/bil-06-user-interface.png)
+L'unico campo modificabile è **Tipo Icone**: **Icone bianche**, **Icone nere** (stile classico) o **Icone Colorate**, con cui in vendita alcuni tasti e funzioni si accendono in modo particolare.
 
-**Client Interface** (20:39). Riguarda la gestione dei client interfacciati: è una parte **da non toccare**. Nella schermata: **Cartella di Lavoro** `C:\Program Files (x86)\CUSTOM\Vis_Banchi\`, **Nome Eseguibile** `VIS_BNC.EXE`, **Timer Image Sequenza Pubblicitaria** 10, **Timer Elimina Code** 5, **Disabilita Cross Selling** e **Abilita Pubblicità Esterna** (entrambi disattivati).
+![Tipo Icone: bianche, nere o colorate](assets/images/bil2-tipo-icone.jpg)
 
-![Client Interface: visualizzatore dei banchi e timer](assets/images/bil-07-client-interface.png)
+**Client Interface.** Riguarda la gestione dei client interfacciati: **da non toccare**. Campi: **Cartella di Lavoro** `C:\Program Files (x86)\CUSTOM\Vis_Banchi\`, **Nome Eseguibile** `VIS_BNC.EXE`, **Timer Image Sequenza Pubblicitaria** 10, **Timer Elimina Code** 5, **Disabilita Cross Selling** e **Abilita Pubblicità Esterna** (disattivati).
 
-**Area Metrologica** (20:49). Offre un minimo di personalizzazione: l'area metrologica è **inviolabile**, è l'unica parte **sotto vincolo metrologico**, quindi non si può modificare a piacere. Si può solo scegliere **in quale posizione dello schermo posteriore** visualizzare i dati metrologici: in orizzontale o in verticale, a destra o a sinistra, in alto o in basso. Il lato **Operatore** e il lato **Cliente** hanno ciascuno posizione verticale, posizione orizzontale e stile (**Layout Orizzontale** o **Layout Verticale**).
+![Client Interface: visualizzatore dei banchi e timer](assets/images/bil-07-client-interface.jpg)
 
-![Area Metrologica: posizione e stile sui due lati](assets/images/bil-08-area-metrologica.png)
+**Area Metrologica.** Offre un minimo di personalizzazione. L'area metrologica è **inviolabile**: è l'unica parte sotto vincolo metrologico. Si può solo scegliere **dove** mostrare i dati metrologici sul display posteriore: in alto o in basso, a destra o a sinistra, in orizzontale o in verticale. Lato **Operatore** e lato **Cliente** hanno ciascuno posizione verticale, posizione orizzontale e stile (**Layout Orizzontale** o **Layout Verticale**).
 
-**Gestione Password** (21:31). Per le configurazioni particolari per un cliente è importante **attivare la gestione delle password**: impedisce al cliente di entrare nella bilancia e sprogrammare o sconfigurare impostazioni che possono avere richiesto parecchio tempo. A seconda del cliente e dell'impianto, la funzione è sempre consigliabile. Gli interruttori sono **Abilita Password Accesso Programmazione** e **Abilita Password Spegnimento**, entrambi disattivati nel webinar.
+![Area Metrologica: posizione e stile sui due lati](assets/images/bil-08-area-metrologica.jpg)
 
-![Gestione Password: accesso programmazione e spegnimento](assets/images/bil-09-gestione-password.png)
+**Gestione Password.** Per le configurazioni particolari di un cliente conviene **attivare le password**: impediscono al cliente di entrare nella bilancia e sprogrammare o sconfigurare impostazioni che possono avere richiesto parecchio tempo. Si possono gestire sia in programmazione sia allo spegnimento dello strumento. Interruttori: **Abilita Password Accesso Programmazione** e **Abilita Password Spegnimento**, entrambi disattivati di default. A seconda del cliente e dell'impianto la funzione è sempre consigliabile.
 
-**Parametri Base** (21:57). Di default sono già impostati per una corretta gestione del touch e degli **offset delle etichette**. L'offset è la parte grafica in cui viene poi visualizzata l'etichetta: i contorni lasciati vuoti perché la carta esca correttamente dalla stampante. Nella schermata: **Suono Tocco Touch** *Alto*, **Luminosità Schermi**, **Offset Etichetta x (mm)** 2, **Offset Etichetta y (mm)** 0, **Avanzamento Stampa (mm)** 5, **Apri Cassetto dopo stampa scontrino** (disattivato).
+![Gestione Password: accesso programmazione e spegnimento](assets/images/bil2-gestione-password.jpg)
 
-![Parametri Base: touch, luminosità, offset etichetta, avanzamento](assets/images/bil-10-parametri-base.png)
+**Parametri Base.** Di default sono già impostati per la testina da **3 pollici** (stampa fino a 80 mm di larghezza) e per una corretta gestione del touch e degli **offset delle etichette**. L'offset è la parte grafica in cui viene stampata l'etichetta: i contorni lasciati vuoti perché la carta esca correttamente. Di norma questa sezione **non si tocca**, salvo settaggi particolari in fase di emissione dell'etichetta. Campi: **Suono Tocco Touch** *Alto*, **Luminosità Schermi**, **Offset Etichetta x (mm)** 2, **Offset Etichetta y (mm)** 0, **Avanzamento Stampa (mm)** 5, **Apri Cassetto dopo stampa scontrino** (disattivato).
 
-**Parametri ECR** (22:26). Il relatore li definisce **intuitivi** e non li apre nel webinar.
+![Parametri Base: touch, luminosità, offset etichetta, avanzamento](assets/images/bil-10-parametri-base.jpg)
 
-**Web Services SenSei** (22:26). Serve per la gestione con **terminali esterni**. Il relatore indica come fondamentale solo la prima parte; le altre sono opzioni che si possono saltare. Nella schermata: **WS SenSei - URL**, **WS SenSei - Terminal Id** (0) e **WS SenSei - Timeout** (5).
+**Parametri ECR.** Servono a collegare un **registratore di cassa** in seriale. Il registratore deve usare il protocollo seriale **XON/XOFF** a **9600 baud, N, 8, 1**.<!-- verificare: protocollo seriale ricavato dal parlato, trascritto in modo incerto -->. Abilitando **ECR Collegato** la bilancia può stampare direttamente lo scontrino sul registratore: per farlo si crea un tasto con funzione **Invio Scontrino a ECR** (vedi [Configurazione Tastiera](configurazione-tastiera.md)). Gli altri interruttori sono **Invio alla Chiusura Scontrino** e **Richiedi Codice Lotteria**, tutti disattivati di default.
 
-![Web Services SenSei: URL, terminal id e timeout](assets/images/bil-11-web-services-sensei.png)
+![Parametri ECR: invio alla chiusura scontrino, codice lotteria, ECR collegato](assets/images/bil2-parametri-ecr.jpg)
 
-<!-- verificare: la trascrizione di 22:26-22:46 e' confusa; "prima parte" potrebbe riferirsi solo al campo URL -->
+**Web Services SenSei.** Serve per la gestione con **terminali esterni**. Le opzioni oltre alla prima sono facoltative. Campi: **WS SenSei - URL**, **WS SenSei - Terminal Id** (0) e **WS SenSei - Timeout** (5).
+
+![Web Services SenSei: URL, terminal id e timeout](assets/images/bil-11-web-services-sensei.jpg)
 
 ## Verifica
 
-Dopo questo passaggio sono stati creati i banchi **SALUMERIA** e **MACELLERIA** e la bilancia sa a quale banco appartiene: in **ID Bilancia** devono comparire il **Numero Banco** e il **Banco Attivo** voluti, il **Numero Bilancia** e il **Tipo Configurazione** *per Banco*.
+In **ID Bilancia** compaiono **Numero Banco** e **Banco Attivo** voluti, il **Numero Bilancia** e il **Tipo Configurazione** *per Banco*.
+
+## Errori comuni
+
+| Problema | Causa probabile | Rimedio |
+|---|---|---|
+| La bilancia mostra la tastiera di un altro banco | **Banco Attivo** diverso da quello atteso | Reimposta **Banco Attivo** |
+| Una modifica su una bilancia non compare sulle altre | **Tipo Configurazione** impostato su **per Bilancia** | Riporta il valore a **per Banco** |
+| Il cliente ha cambiato le impostazioni | Password di programmazione non attiva | Attiva **Abilita Password Accesso Programmazione** |
 
 !!! tip "Prossimo passo"
-    Prima di passare agli archivi (la creazione dei PLU) bisogna dire alla bilancia **come deve comportarsi**, cioè in quale modalità deve lavorare: pagina [Configurazione Operativa](configurazione-operativa.md).
+    Prima di creare gli articoli bisogna dire alla bilancia **come deve comportarsi**, cioè in quale modalità deve lavorare: [Configurazione Operativa](configurazione-operativa.md).
